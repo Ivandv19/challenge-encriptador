@@ -11,16 +11,16 @@
 
     <main>
 
-        <input type="text" value="Ingrese el texto aqui">
+        <input type="text" id="texto" value="Ingrese el texto aqui">
 
         <section>
 
-            <button>Cifrar</button>
-            <button>Descifrar</button>
+            <button id="botonCifrar" onclick="validarDatos(),cifrar();">Cifrar</button>
+            <button id="botonDescifrar" onclick="descifrar();">Descifrar</button>
 
         </section>
 
-        <input type="text">
+        <input type="text" id="textoCifrado">
 
     </main>
 
