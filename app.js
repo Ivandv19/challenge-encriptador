@@ -1,12 +1,11 @@
-
-function validarDatos(){
-
+function validarDatos() {
+    var texto = document.getElementById('texto')
 }
 
-function cifrar(){
-
+function cifrar() {
+    var texto = document.getElementById('texto')
 }
 
-function descifrar(){
-    
+function descifrar() {
+ 
 }
