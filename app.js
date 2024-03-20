@@ -1,8 +1,4 @@
 
-const textocifrado = document.getElementById('textoCifrado');
-
-
-
 function cifrar() {
     var texto = document.getElementById('texto').value;
 
@@ -33,7 +29,7 @@ function cifrar() {
             }
             if (i.includes("i") == true) {
                 arr.push(i);
-                var texto4 = i.replace("e", 'enter');
+                var texto4 = i.replace("i", 'imes');
                 arr2.push(texto4);
             }
 
@@ -53,21 +49,22 @@ function cifrar() {
             arr.push(i);
             arr2.push(i);
         }
-        console.log(arr);
-        console.log(arr2);
     }
 
-
-}
-
-
-
-function descifrar(texto) {
+    textocifrado = arr2.toString();
+    document.getElementById("textoCifrado").value = textocifrado;
 
 
 }
 
-function asignarTextoCifrado(textocifrado) {
+
+
+function descifrar() {
+
+}
+
+function asignarTextoCifrado() {
+
 
 
 }
