@@ -1,13 +1,21 @@
+function validarInput() {
+    var input = document.getElementById('texto').value;
+    var regex = /^[a-z\s]*$/;
+    if (!regex.test(input)) {
+        alert('El texto ingresado no es válido. Por favor, use solo letras minúsculas sin acentos ni caracteres especiales.');
+        return false;
+    } else {
+        encriptar();
+        return true;
+    }
+}
 
 
-function cifrar() {
-    //paso mi texto del html a js
+function encriptar() {
     const texto = document.getElementById('texto').value;
-    //convierto mi texto a un array
     const arr = texto.split('');
-    //creo un bucle que itere en cada elemento de mi array
+
     for (let i = 0; i < arr.length; i++) {
-        //creo condicional para saber si mi elemento contiene alguna de las letras 'aeiou'
         if ('aeiou'.includes(arr[i])) {
             switch (arr[i]) {
                 case 'a':
@@ -27,17 +35,18 @@ function cifrar() {
                     break;
             }
         }
-
     }
 
     const textoCifrado = arr.join('');
     console.log(textoCifrado);
+    // Asigna el texto encriptado al valor del input
     document.getElementById("texto2").value = textoCifrado;
 
+    // Después de que la encriptación se complete, mostramos el contenedor del input
+    document.getElementById("texto2Container").style.display = "block";
 }
 
-function descifrar() {
-
+function desencriptar() {
     const textoCifrado = document.getElementById('texto').value;
     const textoDescifrado = textoCifrado
         .replace(/ai/g, "a")
@@ -48,5 +57,4 @@ function descifrar() {
 
     console.log(textoDescifrado);
     document.getElementById("texto2").value = textoDescifrado;
-
 }
