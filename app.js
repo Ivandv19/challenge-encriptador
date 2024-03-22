@@ -60,7 +60,9 @@ function descifrar() {
             .replace(/ufat/g, "u");
     });
 
-    console.log(listaModificada);
-    return document.getElementById("textoCifrado").value = listaModificada;
+    
+    textoCifrado = listaModificada.toString();
+    console.log(textoCifrado);
+    return document.getElementById("textoCifrado").value = textoCifrado;
 
 }
