@@ -11,11 +11,11 @@
 
     <main>
 
-        <input type="text" id="texto" value="Ingrese el texto aqui">
+        <input type="text" id="caja1">
 
         <section>
 
-            <button id="botonCifrar" onclick="botonCifrar()">Cifrar</button>
+            <button id="botonCifrar" onclick="cifrar()">Cifrar</button>
             <button id="botonDescifrar" onclick="descifrar()">Descifrar</button>
 
         </section>
@@ -23,7 +23,9 @@
         <input type="text" id="textoCifrado">
 
     </main>
-
+    <script>
+        const input = document.getElementById('caja1');
+    </script>
     <script src="app.js"></script>
 
 </body>

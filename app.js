@@ -1,72 +1,66 @@
-function botonCifrar() {
-
-    cifrar();
-
-}
-
 
 
 function cifrar() {
 
-    var texto = document.getElementById('texto').value;
-    /*   
-    La letra "a" es convertida para "ai"
-    La letra "e" es convertida para "enter"
-    La letra "i" es convertida para "imes"
-    La letra "o" es convertida para "ober"
-    La letra "u" es convertida para "ufat"*/
-
-    //recorremos cada caracter de nuestro texto en busca de las letras y las cambiamos
-    let arr = [];
+    const texto = document.getElementById('caja1').value;
     
+    var arr = [];
+
     for (let i of texto) {
         if (i.includes("a") == true || i.includes("e") == true || i.includes("i") == true || i.includes("o") == true || i.includes("u") == true) {
 
             if (i.includes("a") == true) {
-                var texto2 = i.replace("a", 'ai');
-                arr.push(texto2);
+                var letra0 = i.replace("a", 'ai');
+                arr.push(letra0);
             }
 
             if (i.includes("e") == true) {
-                var texto3 = i.replace("e", 'enter');
-                arr.push(texto3);
+                var letra1 = i.replace("e", 'enter');
+                arr.push(letra1);
             }
 
             if (i.includes("i") == true) {
-                var texto4 = i.replace("i", 'imes');
-                arr.push(texto4);
+                var letra2 = i.replace("i", 'imes');
+                arr.push(letra2);
             }
 
             if (i.includes("o") == true) {
-                var texto5 = i.replace("o", 'ober');
-                arr.push(texto5);
+                var letra3 = i.replace("o", 'ober');
+                arr.push(letra3);
             }
 
             if (i.includes("u") == true) {
-                var texto6 = i.replace("u", 'ofat');
-                arr.push(texto6);
+                var letra4 = i.replace("u", 'ufat');
+                arr.push(letra4);
             }
 
         } else {
+
             arr.push(i);
-
         }
+
     }
-    
-    textocifrado = arr.join('');
-    return document.getElementById("textoCifrado").value = textocifrado;
-}
 
-function botonDescifrar() {
+    textoCifrado = arr.join('');
+    console.log(textoCifrado);
+    return document.getElementById("textoCifrado").value = textoCifrado;
 
 }
 
-function descifrar(texto) {
+function descifrar() {
 
-}
+    const lista1 = []
+    lista1.push(caja1.value)
 
-function asignarTextoCifrado() {
+    const listaModificada = lista1.map(function (elemento) {
+        return elemento.replace(/ai/g, "a")
+            .replace(/enter/g, "e")
+            .replace(/imes/g, "i")
+            .replace(/ober/g, "o")
+            .replace(/ufat/g, "u");
+    });
 
-
+    console.log(listaModificada);
+    return document.getElementById("textoCifrado").value = listaModificada;
 
 }
