@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="reset.css">
+
 </head>
 
 <body>
@@ -15,25 +14,21 @@
 
     <main>
 
-        <input type="text" id="caja1">
+        <input type="text" id="texto" name="inputLetrasMinusculas" pattern="[a-z]+" title="Por favor, introduce solo letras minúsculas." required>
 
         <section>
-
             <button id="botonCifrar" onclick="cifrar()">Cifrar</button>
             <button id="botonDescifrar" onclick="descifrar()">Descifrar</button>
-
         </section>
 
-        <input type="text" id="textoCifrado">
+        <input type="text" id="texto2">
 
     </main>
 
+    <script src="app.js"></script>
+
     <footer>
     </footer>
-
-    <script src="app.js">
-        const input = document.getElementById('caja1');
-    </script>
 
 </body>
 

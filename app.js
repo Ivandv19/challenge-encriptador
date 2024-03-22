@@ -1,68 +1,52 @@
 
 
 function cifrar() {
-
-    const texto = document.getElementById('caja1').value;
-    
-    var arr = [];
-
-    for (let i of texto) {
-        if (i.includes("a") == true || i.includes("e") == true || i.includes("i") == true || i.includes("o") == true || i.includes("u") == true) {
-
-            if (i.includes("a") == true) {
-                var letra0 = i.replace("a", 'ai');
-                arr.push(letra0);
+    //paso mi texto del html a js
+    const texto = document.getElementById('texto').value;
+    //convierto mi texto a un array
+    const arr = texto.split('');
+    //creo un bucle que itere en cada elemento de mi array
+    for (let i = 0; i < arr.length; i++) {
+        //creo condicional para saber si mi elemento contiene alguna de las letras 'aeiou'
+        if ('aeiou'.includes(arr[i])) {
+            switch (arr[i]) {
+                case 'a':
+                    arr[i] = 'ai';
+                    break;
+                case 'e':
+                    arr[i] = 'enter';
+                    break;
+                case 'i':
+                    arr[i] = 'imes';
+                    break;
+                case 'o':
+                    arr[i] = 'ober';
+                    break;
+                case 'u':
+                    arr[i] = 'ufat';
+                    break;
             }
-
-            if (i.includes("e") == true) {
-                var letra1 = i.replace("e", 'enter');
-                arr.push(letra1);
-            }
-
-            if (i.includes("i") == true) {
-                var letra2 = i.replace("i", 'imes');
-                arr.push(letra2);
-            }
-
-            if (i.includes("o") == true) {
-                var letra3 = i.replace("o", 'ober');
-                arr.push(letra3);
-            }
-
-            if (i.includes("u") == true) {
-                var letra4 = i.replace("u", 'ufat');
-                arr.push(letra4);
-            }
-
-        } else {
-
-            arr.push(i);
         }
 
     }
 
-    textoCifrado = arr.join('');
+    const textoCifrado = arr.join('');
     console.log(textoCifrado);
-    return document.getElementById("textoCifrado").value = textoCifrado;
+    document.getElementById("texto2").value = textoCifrado;
 
 }
 
 function descifrar() {
 
-    const lista1 = []
-    lista1.push(caja1.value)
+    const textoCifrado = document.getElementById('texto').value;
+    const textoDescifrado = textoCifrado
+        .replace(/ai/g, "a")
+        .replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
 
-    const listaModificada = lista1.map(function (elemento) {
-        return elemento.replace(/ai/g, "a")
-            .replace(/enter/g, "e")
-            .replace(/imes/g, "i")
-            .replace(/ober/g, "o")
-            .replace(/ufat/g, "u");
-    });
-
-    
-    textoCifrado = listaModificada.toString();
-    console.log(textoCifrado);
-    return document.getElementById("textoCifrado").value = textoCifrado;
+    console.log(textoDescifrado);
+    document.getElementById("texto2").value = textoDescifrado;
 
 }
