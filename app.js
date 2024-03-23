@@ -39,10 +39,7 @@ function encriptar() {
 
     const textoCifrado = arr.join('');
     console.log(textoCifrado);
-    // Asigna el texto encriptado al valor del input
     document.getElementById("texto2").value = textoCifrado;
-
-    // Después de que la encriptación se complete, mostramos el contenedor del input
     document.getElementById("texto2Container").style.display = "block";
 }
 
@@ -57,4 +54,15 @@ function desencriptar() {
 
     console.log(textoDescifrado);
     document.getElementById("texto2").value = textoDescifrado;
+}
+
+function copiarTexto() {
+    var textoCifrado = document.getElementById("texto2").value;
+    navigator.clipboard.writeText(textoCifrado)
+        .then(function() {
+            alert("Texto copiado al portapapeles correctamente");
+        })
+        .catch(function(error) {
+            console.error("Error al copiar texto: ", error);
+        });
 }
