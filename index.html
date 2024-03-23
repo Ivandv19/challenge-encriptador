@@ -22,25 +22,24 @@
     <main>
 
         <section class="encriptar">
-            <input type="text" id="texto" placeholder="Ingrese el texto aqui" required>
+            <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
             <p>&#33; Solo letras minúsculas</p>
-            <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
-            <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
+            <section id="botones">
+                <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
+                <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
+            </section>
         </section>
 
         <section class="desencriptar">
             <div class="imgMuñeco">
                 <img src="img/Muñeco.png" id="imgMuñeco" alt="imagenMuñeco">
             </div>
-
             <div>
                 <p>Ningun mensaje fue encontrado</p>
-                <br>
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-
             <div id="texto2Container" style="display: none;">
-            <input type="text" id="texto2" style="border: none;">
+                <textarea name="" id="texto2" cols="30" rows="10"></textarea>
             </div>
         </section>
 
