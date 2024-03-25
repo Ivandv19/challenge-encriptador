@@ -14,9 +14,10 @@ main {
 /* Estilos para el contenedor del logo */
 .container-logo {
     position: relative; /* Posición relativa */
-    width: 300px; /* Ancho fijo */
-    height: 48px; /* Altura fija */
-    top: 50px; /* Desplazamiento desde arriba */
+    width: 20%; /* Ancho fijo */
+    height: 100%; /* Altura fija */
+    top: 5%; /* Desplazamiento desde arriba */
+    padding: 3rem; /* Relleno interno */
     float: left; /* Flotar a la izquierda */
 }
 
@@ -25,13 +26,13 @@ main {
     position: absolute; /* Posición absoluta */
     width: 120px; /* Ancho fijo */
     height: 48px; /* Altura fija */
-    right: 0; /* Alineación a la derecha */
+    right: 0;
 }
 
 /* Estilos para el contenedor de encriptación */
 .container-encriptar {
     position: relative; /* Posición relativa */
-    width: 846px; /* Ancho fijo */
+    width: 40%; /* Ancho fijo */
     height: 850px; /* Altura fija */
     padding: 3rem; /* Relleno interno */
     float: left; /* Flotar a la izquierda */
@@ -40,7 +41,7 @@ main {
 /* Estilos para el contenedor de texto */
 .container-texto {
     position: relative; /* Posición relativa */
-    width: 750px; /* Ancho fijo */
+    width: 100%;; /* Ancho fijo */
     height: 400px; /* Altura fija */
     top: 100px; /* Desplazamiento desde arriba */
 }
@@ -55,6 +56,7 @@ main {
 
 /* Estilos para el área de texto de encriptación */
 .container-encriptar textarea {
+    width: 100%;
     color: black; /* Color del texto */
     text-align: left; /* Alineación del texto */
     font-size: 32px; /* Tamaño de la fuente */
@@ -82,7 +84,7 @@ main {
 /* Estilos para los botones de encriptación */
 .container-encriptar button {
     width: 350px; /* Ancho fijo */
-    height: 70px; /* Altura fija */
+    height: 55px; /* Altura fija */
     margin: 1px 10px; /* Margen exterior */
     background: #0A3871; /* Color de fondo */
     border-radius: 25px; /* Radio de borde */
@@ -94,7 +96,7 @@ main {
 /* Estilos para el contenedor de desencriptación */
 .container-desencriptar {
     position: relative; /* Posición relativa */
-    width: 500px; /* Ancho fijo */
+    width: 40%; /* Ancho fijo */
     height: 850px; /* Altura fija */
     padding: 3rem; /* Relleno interno */
     float: left; /* Flotar a la izquierda */
@@ -102,30 +104,29 @@ main {
 
 /* Estilos para el contenedor de información */
 .container-info {
-    position: relative; /* Posición relativa */
-    display: block; /* Mostrar como bloque */
-    background-color: white; /* Color de fondo */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    border-radius: 24px; /* Radio de borde */
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); /* Sombra */
+    display: block;
+    position: relative; 
+    width: 400px; 
+    height: 100%; 
+    border-radius: 24px; 
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); 
 }
 
 /* Estilos para el contenedor de imagen */
 .container-img {
-    position: absolute; /* Posición absoluta */
+    position: relative; /* Posición absoluta */
     width: 336px; /* Ancho fijo */
     height: 304px; /* Altura fija */
-    top: 100px; /* Desplazamiento desde arriba */
-    left: 30px; /* Desplazamiento desde la izquierda */
     align-items: center; /* Alineación de elementos */
+    margin: 0 auto; /* Margen automático */
+    top: 150px;
 }
 
 /* Estilos para la imagen del muñeco */
 .container-info #imgMuñeco {
     width: 336px; /* Ancho fijo */
     height: 304px; /* Altura fija */
-    margin: 0 auto; /* Margen automático */
+   
 }
 
 /* Estilos para el contenedor de texto */
@@ -137,6 +138,7 @@ main {
     height: auto; /* Altura automática */
     top: 500px; /* Desplazamiento desde arriba */
     left: 0; /* Alineación desde la izquierda */
+    float: left; /* Flotar a la izquierda */
 }
 
 /* Estilos para los párrafos dentro del contenedor de texto */
@@ -155,26 +157,26 @@ main {
     background-color: white; /* Color de fondo */
     margin: 0 auto; /* Margen automático */
     width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    border-radius: 24px; /* Radio de borde */
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
+    height: 80%; /* Altura completa */
+    border-radius: 24px; 
+    
 }
 
 /* Estilos para el contenedor del botón de copiar */
 .container-botoncopiar {
-    position: relative; /* Posición relativa */
+    position: absolute; /* Posición relativa */
     width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
+    height: 20%; /* Altura automática */
     display: flex; /* Flexbox */
     justify-content: center; /* Alineación del contenido */
-    top: 650px; /* Desplazamiento desde arriba */
+    bottom: 0;
 }
 
 /* Estilos para el botón de copiar */
 .container-botoncopiar button {
     position: relative; /* Posición relativa */
     width: 350px; /* Ancho fijo */
-    height: 70px; /* Altura fija */
+    height: 55px; /* Altura fija */
     margin: 0px auto; /* Margen automático */
     border-radius: 25px; /* Radio de borde */
     padding: 16px 24px; /* Relleno interno */
@@ -182,7 +184,6 @@ main {
     cursor: pointer; /* Cursor al pasar */
     background-color: transparent; /* Color de fondo transparente */
     border: 2px solid #0A3871; /* Borde sólido */
-    left: 10px; /* Desplazamiento desde la izquierda */
 }
 
 /* Estilos para el área de texto del contenedor 2 */
@@ -218,7 +219,7 @@ footer {
 }
 
 /* Media query para dispositivos con un ancho máximo de 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* Estilos aplicados a varios contenedores para dispositivos con un ancho máximo de 768px */
     .container-logo,
     .container-encriptar,
@@ -232,13 +233,14 @@ footer {
         align-items: center; /* Alineación de elementos */
     }
 
-    .imgLogo{
-        left: 0; /* Alineación a la izquierda */
+    .container-logo{
+        left: 0;
     }
     .container-desencriptar{
         width: 100%; /* Ancho completo */
-        height: 30%; /* Altura fija */
+        height: 50%; /* Altura fija */
     }
+
 
     .container-img {
         display: none; /* Ocultar la imagen */
@@ -249,13 +251,17 @@ footer {
         width: 100%; /* Ancho completo */
         text-align: center; /* Alineación del texto */
         margin: 0 auto; /* Margen automático */
-        top: 0; /* Alineación desde arriba */
+        top: 20px; /* Alineación desde arriba */
         left: 0; /* Alineación desde la izquierda */
+    }
+
+    .container-text p {
+        font-size: 23px;
     }
 }
 
 /* Media query para dispositivos con un ancho máximo de 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     /* Estilos aplicados a varios contenedores para dispositivos con un ancho máximo de 480px */
     .container-logo,
     .container-encriptar,
@@ -269,6 +275,10 @@ footer {
         justify-content: center; /* Alineación del contenido */
         align-items: center; /* Alineación de elementos */
     }
+    .container-logo{
+        left: 0;
+      
+    }
 
     .container-encriptar #botones {
         flex-direction: column; /* Dirección de la columna */
@@ -280,8 +290,16 @@ footer {
         margin: 5px 0; /* Margen externo */
     }
 
+    .container-desencriptar{
+        width: 100%; /* Ancho completo */
+        height: 50%; /* Altura fija */
+    }
+
     .container-img {
         display: none; /* Ocultar la imagen */
+    }
+    .container-text p {
+        font-size: 20px;
     }
 
     .container-text {
@@ -289,7 +307,7 @@ footer {
         width: 100%; /* Ancho completo */
         text-align: center; /* Alineación del texto */
         margin: 0 auto; /* Margen automático */
-        top: 0; /* Alineación desde arriba */
+        top: 20px; /* Alineación desde arriba */
         left: 0; /* Alineación desde la izquierda */
         font-size: 20%; /* Tamaño de la fuente */
     }

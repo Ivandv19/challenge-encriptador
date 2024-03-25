@@ -1,66 +1,58 @@
-<!DOCTYPE html> <!-- Declaración del tipo de documento, indica que es un documento HTML -->
-<html lang="es"> <!-- Inicio del elemento html, especifica el lenguaje principal del documento (español) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<head> <!-- Inicio del encabezado del documento -->
-    <meta charset="UTF-8"> <!-- Especifica el juego de caracteres utilizado en el documento -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
-    <title>Encriptador</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="reset.css"> <!-- Enlace al archivo CSS para restablecer los estilos predeterminados del navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS personalizado para estilizar la página -->
-</head> <!-- Fin del encabezado del documento -->
-
-<body> <!-- Inicio del cuerpo del documento -->
-
-    <main> <!-- Inicio del elemento principal de contenido -->
-
-        <!-- Contenedor del logo -->
+    <header>
         <div class="container-logo">
-            <img src="img/Logo.png" class='imgLogo' alt="logoAlura"> <!-- Imagen del logo -->
+            <img src="img/Logo.png" class='imgLogo' alt="logoAlura">
         </div>
+    </header>
 
-        <!-- Contenedor para encriptar texto -->
-        <div class="container-encriptar">
+    <main>
+        <section class="container-encriptar">
             <div class="container-texto">
-                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui" required></textarea> <!-- Área de texto para ingresar el texto a encriptar -->
+                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
             </div>
-            <p>&#33; Solo letras minúsculas</p> <!-- Mensaje de advertencia -->
-            <section id="botones">
-                <button id="botonCifrar" onclick="validarInput()">Encriptar</button> <!-- Botón para encriptar -->
-                <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button> <!-- Botón para desencriptar -->
-            </section>
-        </div>
+            <p>&#33; Solo letras minúsculas</p>
+            <div id="botones">
+                <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
+                <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
 
-        <!-- Contenedor para desencriptar texto -->
-        <div class="container-desencriptar">
+        <section class="container-desencriptar">
             <div class="container-info">
                 <div class="container-img">
-                    <img src="img/Muñeco.png" id="imgMuñeco" alt=""> <!-- Imagen del muñeco -->
+                    <img src="img/Muñeco.png" id="imgMuñeco" alt="">
                 </div>
                 <div class="container-text">
-                    <p>Ningun mensaje fue encontrado</p> <!-- Mensaje de aviso -->
+                    <p>Ningun mensaje fue encontrado</p>
                     <br>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p> <!-- Instrucciones -->
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
                 <div class="container-texto2" id="container-texto2" style="display: none;">
-                    <textarea name="" id="texto2" cols="23" rows="17"></textarea> <!-- Área de texto para mostrar el texto encriptado -->
+                    <textarea name="" id="texto2" cols="23" rows="17"></textarea>
                 </div>
                 <div class="container-botoncopiar" id="container-botoncopiar" style="display: none;">
-                    <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto Cifrado</button> <!-- Botón para copiar texto encriptado -->
+                    <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto Cifrado</button>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-    </main> <!-- Fin del elemento principal de contenido -->
-
-    <!-- Pie de página -->
     <footer>
         <div class="container-footer">
-            <p>Creado por Ivan Cruz - 2024 🇲🇽 <br>  Estudiante ONE (G6) - Oracle Next Education </p> <!-- Información del autor y año -->
+            <p>Creado por Ivan Cruz - 2024 🇲🇽 <br>  Estudiante ONE (G6) - Oracle Next Education </p>
         </div>
     </footer>
+    <script src="app.js"></script>
 
-    <script src="app.js"></script> <!-- Enlace al archivo JavaScript para la funcionalidad dinámica -->
-
-</body> <!-- Fin del cuerpo del documento -->
-
-</html> <!-- Fin del documento HTML -->
+</body>
+</html>
