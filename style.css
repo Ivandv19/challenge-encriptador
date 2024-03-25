@@ -1,279 +1,262 @@
+/* Estilos globales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
 }
 
-
+/* Estilos para el elemento principal */
 main {
-    width: 100%;
-    height: 850px;
+    width: 100%; /* Ancho completo */
+    height: 850px; /* Altura fija */
 }
 
-
+/* Estilos para el contenedor del logo */
 .container-logo {
-    position: relative;
-    width: 300px;
-    height: 48px;
-    top: 50px;
-    float: left;
-    
+    position: relative; /* Posición relativa */
+    width: 300px; /* Ancho fijo */
+    height: 48px; /* Altura fija */
+    top: 50px; /* Desplazamiento desde arriba */
+    float: left; /* Flotar a la izquierda */
 }
 
+/* Estilos para la imagen del logo */
 .imgLogo {
-
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    right: 0;
+    position: absolute; /* Posición absoluta */
+    width: 120px; /* Ancho fijo */
+    height: 48px; /* Altura fija */
+    right: 0; /* Alineación a la derecha */
 }
 
-
-
+/* Estilos para el contenedor de encriptación */
 .container-encriptar {
-    position: relative;
-    width: 846px;
-    height: 850px;
-    padding: 3rem;
-    float: left;
+    position: relative; /* Posición relativa */
+    width: 846px; /* Ancho fijo */
+    height: 850px; /* Altura fija */
+    padding: 3rem; /* Relleno interno */
+    float: left; /* Flotar a la izquierda */
 }
 
+/* Estilos para el contenedor de texto */
 .container-texto {
-    position: relative;
-    width: 750px;
-    height: 400px;
-    top: 100px;
+    position: relative; /* Posición relativa */
+    width: 750px; /* Ancho fijo */
+    height: 400px; /* Altura fija */
+    top: 100px; /* Desplazamiento desde arriba */
 }
 
-
-
+/* Estilos para el marcador de posición del texto */
 #texto::placeholder {
-    color: #0A3871;
-    font-weight: 400;
-    font-size: 32px;
-    text-align: start;
+    color: #0A3871; /* Color del texto */
+    font-weight: 400; /* Peso de la fuente */
+    font-size: 32px; /* Tamaño de la fuente */
+    text-align: start; /* Alineación del texto */
 }
 
-/* Estilos para el textarea de encriptación */
+/* Estilos para el área de texto de encriptación */
 .container-encriptar textarea {
-    color: black;
-    text-align: left;
-    font-size: 32px;
-    border: none;
+    color: black; /* Color del texto */
+    text-align: left; /* Alineación del texto */
+    font-size: 32px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
 }
 
-/* Estilos para los mensajes en la sección de encriptación */
+/* Estilos para los párrafos dentro del contenedor de encriptación */
 .container-encriptar p {
-    color: black;
-    position: absolute;
-    top: 675px;
-    left: 80px;
-
+    color: black; /* Color del texto */
+    position: absolute; /* Posición absoluta */
+    top: 675px; /* Desplazamiento desde arriba */
+    left: 80px; /* Desplazamiento desde la izquierda */
 }
 
-
+/* Estilos para el contenedor de los botones */
 .container-encriptar #botones {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    top: 250px;
-
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Alineación del contenido */
+    top: 250px; /* Desplazamiento desde arriba */
 }
 
+/* Estilos para los botones de encriptación */
 .container-encriptar button {
-    width: 350px;
-    height: 70px;
-    margin: 1px 10px;
-    background: #0A3871;
-    border-radius: 25px;
-    padding: 16px 24px;
-    border: none;
-    color: #F3F3F3;
-
+    width: 350px; /* Ancho fijo */
+    height: 70px; /* Altura fija */
+    margin: 1px 10px; /* Margen exterior */
+    background: #0A3871; /* Color de fondo */
+    border-radius: 25px; /* Radio de borde */
+    padding: 16px 24px; /* Relleno interno */
+    border: none; /* Sin borde */
+    color: #F3F3F3; /* Color del texto */
 }
 
-
+/* Estilos para el contenedor de desencriptación */
 .container-desencriptar {
-    position: relative;
-    width: 500px;
-    height: 850px;
-    padding: 3rem;
-    float: left;
-
+    position: relative; /* Posición relativa */
+    width: 500px; /* Ancho fijo */
+    height: 850px; /* Altura fija */
+    padding: 3rem; /* Relleno interno */
+    float: left; /* Flotar a la izquierda */
 }
 
-
+/* Estilos para el contenedor de información */
 .container-info {
-    position: relative;
-    display: block;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    border-radius: 24px;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
-
+    position: relative; /* Posición relativa */
+    display: block; /* Mostrar como bloque */
+    background-color: white; /* Color de fondo */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    border-radius: 24px; /* Radio de borde */
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); /* Sombra */
 }
 
-
+/* Estilos para el contenedor de imagen */
 .container-img {
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    top: 100px;
-    left: 30px;
-    align-items: center;
-
-
+    position: absolute; /* Posición absoluta */
+    width: 336px; /* Ancho fijo */
+    height: 304px; /* Altura fija */
+    top: 100px; /* Desplazamiento desde arriba */
+    left: 30px; /* Desplazamiento desde la izquierda */
+    align-items: center; /* Alineación de elementos */
 }
 
+/* Estilos para la imagen del muñeco */
 .container-info #imgMuñeco {
-    width: 336px;
-    height: 304px;
-    margin: 0 auto;
+    width: 336px; /* Ancho fijo */
+    height: 304px; /* Altura fija */
+    margin: 0 auto; /* Margen automático */
 }
 
+/* Estilos para el contenedor de texto */
 .container-text {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    top: 500px;
-    left: 0;
-    
+    position: absolute; /* Posición absoluta */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección del contenido */
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    top: 500px; /* Desplazamiento desde arriba */
+    left: 0; /* Alineación desde la izquierda */
 }
 
+/* Estilos para los párrafos dentro del contenedor de texto */
 .container-text p {
-   
-    font-size: 25px;
-    position: relative;
-    color: #000000;
-    font-size: 25px;
-    text-align: center;
-    justify-content: center;
-
+    font-size: 25px; /* Tamaño de la fuente */
+    position: relative; /* Posición relativa */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    justify-content: center; /* Justificación del contenido */
 }
 
+/* Estilos para el contenedor del segundo texto */
 .container-texto2 {
-    position: absolute;
-    top: 1px;
-    background-color: white;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    border-radius: 24px;
+    position: absolute; /* Posición absoluta */
+    top: 1px; /* Desplazamiento desde arriba */
+    background-color: white; /* Color de fondo */
+    margin: 0 auto; /* Margen automático */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    border-radius: 24px; /* Radio de borde */
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
-    ;
 }
 
+/* Estilos para el contenedor del botón de copiar */
 .container-botoncopiar {
-    
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    top: 650px;
-
-
-
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Alineación del contenido */
+    top: 650px; /* Desplazamiento desde arriba */
 }
 
+/* Estilos para el botón de copiar */
 .container-botoncopiar button {
-    position: relative;
-    width: 350px;
-    height: 70px;
-    margin: 0px auto;
-    border-radius: 25px;
-    padding: 16px 24px;
-    color: #000000;
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #0A3871;
-    left: 10px;
-
+    position: relative; /* Posición relativa */
+    width: 350px; /* Ancho fijo */
+    height: 70px; /* Altura fija */
+    margin: 0px auto; /* Margen automático */
+    border-radius: 25px; /* Radio de borde */
+    padding: 16px 24px; /* Relleno interno */
+    color: #000000; /* Color del texto */
+    cursor: pointer; /* Cursor al pasar */
+    background-color: transparent; /* Color de fondo transparente */
+    border: 2px solid #0A3871; /* Borde sólido */
+    left: 10px; /* Desplazamiento desde la izquierda */
 }
 
-
-
+/* Estilos para el área de texto del contenedor 2 */
 .container-texto2 textarea {
-
-    position: absolute;
-    margin: 20px 20px;
-    color: #0A3871;
-    font-weight: 400;
-    font-size: 32px;
-    width: 90%;
-    height: 80%;
-    border: none;
-
+    position: absolute; /* Posición absoluta */
+    margin: 20px 20px; /* Margen externo */
+    color: #0A3871; /* Color del texto */
+    font-weight: 400; /* Peso de la fuente */
+    font-size: 32px; /* Tamaño de la fuente */
+    width: 90%; /* Ancho del textarea */
+    height: 80%; /* Altura del textarea */
+    border: none; /* Sin borde */
 }
 
+/* Estilos para el pie de página */
 footer {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
+    position: relative; /* Posición relativa */
+    display: flex; /* Flexbox */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
 }
 
+/* Estilos para el contenedor del pie de página */
 .container-footer {
-    width: 100%;
-    height: 100%;
-    background-color: #0A3871;
-    padding: 3% 0;
-    text-align: center;
-    justify-content: center;
-    color: #F3F3F3;
-    clear: both;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: #0A3871; /* Color de fondo */
+    padding: 3% 0; /* Relleno interno */
+    text-align: center; /* Alineación del texto */
+    justify-content: center; /* Justificación del contenido */
+    color: #F3F3F3; /* Color del texto */
+    clear: both; /* Limpieza del flujo de elementos */
 }
 
-
-
+/* Media query para dispositivos con un ancho máximo de 768px */
 @media only screen and (max-width: 768px) {
-
+    /* Estilos aplicados a varios contenedores para dispositivos con un ancho máximo de 768px */
     .container-logo,
     .container-encriptar,
     .container-texto,
     .container-texto textarea,
     .container-info,
     .container-botoncopiar {
-        width: 100%;
-        display: block;
-        justify-content: center;
-        align-items: center;
-
+        width: 100%; /* Ancho completo */
+        display: block; /* Mostrar como bloque */
+        justify-content: center; /* Alineación del contenido */
+        align-items: center; /* Alineación de elementos */
     }
 
     .imgLogo{
-        
-        left: 0;
+        left: 0; /* Alineación a la izquierda */
     }
     .container-desencriptar{
-        width: 100%;
-        height: 30%;
+        width: 100%; /* Ancho completo */
+        height: 30%; /* Altura fija */
     }
 
     .container-img {
-        display: none;
+        display: none; /* Ocultar la imagen */
     }
 
     .container-text {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        top: 0;
-        left: 0;
+        flex-direction: column; /* Dirección de la columna */
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Alineación del texto */
+        margin: 0 auto; /* Margen automático */
+        top: 0; /* Alineación desde arriba */
+        left: 0; /* Alineación desde la izquierda */
     }
-  
-
 }
 
-/* Media query para dispositivos móviles */
+/* Media query para dispositivos con un ancho máximo de 480px */
 @media only screen and (max-width: 480px) {
-
+    /* Estilos aplicados a varios contenedores para dispositivos con un ancho máximo de 480px */
     .container-logo,
     .container-encriptar,
     .container-texto,
@@ -281,38 +264,33 @@ footer {
     .container-desencriptar,
     .container-info,
     .container-botoncopiar {
-        width: 100%;
-        display: block;
-        justify-content: center;
-        align-items: center;
-
+        width: 100%; /* Ancho completo */
+        display: block; /* Mostrar como bloque */
+        justify-content: center; /* Alineación del contenido */
+        align-items: center; /* Alineación de elementos */
     }
 
     .container-encriptar #botones {
-        flex-direction: column;
-        align-items: center;
-
+        flex-direction: column; /* Dirección de la columna */
+        align-items: center; /* Alineación de elementos */
     }
 
     .container-encriptar button {
-        width: 100%;
-        margin: 5px 0;
+        width: 100%; /* Ancho completo */
+        margin: 5px 0; /* Margen externo */
     }
-
 
     .container-img {
-        display: none;
+        display: none; /* Ocultar la imagen */
     }
 
-     .container-text {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        top: 0;
-        left: 0;
-        font-size: 20%;
+    .container-text {
+        flex-direction: column; /* Dirección de la columna */
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Alineación del texto */
+        margin: 0 auto; /* Margen automático */
+        top: 0; /* Alineación desde arriba */
+        left: 0; /* Alineación desde la izquierda */
+        font-size: 20%; /* Tamaño de la fuente */
     }
-
-    
 }
