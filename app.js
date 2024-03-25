@@ -1,23 +1,24 @@
+// Función para validar el texto ingresado antes de encriptar
 function validarInput() {
-    var input = document.getElementById('texto').value;
-    var regex = /^[a-z\s]*$/;
-    if (!regex.test(input)) {
-        alert('El texto ingresado no es válido. Por favor, use solo letras minúsculas sin acentos ni caracteres especiales.');
-        return false;
-    } else {
-        encriptar();
-        return true;
+    var input = document.getElementById('texto').value; // Obtener el valor del texto ingresado
+    var regex = /^[a-z\s]*$/; // Expresión regular para permitir solo letras minúsculas y espacios
+    if (!regex.test(input)) { // Si el texto no coincide con la expresión regular
+        alert('El texto ingresado no es válido. Por favor, use solo letras minúsculas sin acentos ni caracteres especiales.'); // Mostrar mensaje de alerta
+        return false; // Devolver falso
+    } else { // Si el texto es válido
+        encriptar(); // Llamar a la función para encriptar
+        return true; // Devolver verdadero
     }
 }
 
-
+// Función para encriptar el texto
 function encriptar() {
-    const texto = document.getElementById('texto').value;
-    const arr = texto.split('');
+    const texto = document.getElementById('texto').value; // Obtener el valor del texto ingresado
+    const arr = texto.split(''); // Convertir el texto en un array de caracteres
 
-    for (let i = 0; i < arr.length; i++) {
-        if ('aeiou'.includes(arr[i])) {
-            switch (arr[i]) {
+    for (let i = 0; i < arr.length; i++) { // Recorrer cada caracter del texto
+        if ('aeiou'.includes(arr[i])) { // Si el caracter es una vocal
+            switch (arr[i]) { // Reemplazar cada vocal por su correspondiente encriptado
                 case 'a':
                     arr[i] = 'ai';
                     break;
@@ -37,32 +38,35 @@ function encriptar() {
         }
     }
 
-    const textoCifrado = arr.join('');
-    console.log(textoCifrado);
-    document.getElementById("texto2").value = textoCifrado;
-    document.getElementById("texto2Container").style.display = "block";
+    const textoCifrado = arr.join(''); // Unir los caracteres encriptados para formar el texto cifrado
+    console.log(textoCifrado); // Mostrar el texto cifrado en la consola
+    document.getElementById("texto2").value = textoCifrado; // Establecer el texto cifrado en el segundo textarea
+    document.getElementById("container-texto2").style.display = "block"; // Mostrar el contenedor del segundo textarea
+    document.getElementById("container-botoncopiar").style.display = 'flex';
 }
 
+// Función para desencriptar el texto
 function desencriptar() {
-    const textoCifrado = document.getElementById('texto').value;
-    const textoDescifrado = textoCifrado
+    const textoCifrado = document.getElementById('texto').value; // Obtener el texto cifrado
+    const textoDescifrado = textoCifrado // Desencriptar el texto reemplazando cada encriptación por su vocal original
         .replace(/ai/g, "a")
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
 
-    console.log(textoDescifrado);
-    document.getElementById("texto2").value = textoDescifrado;
+    console.log(textoDescifrado); // Mostrar el texto descifrado en la consola
+    document.getElementById("texto2").value = textoDescifrado; // Establecer el texto descifrado en el segundo textarea
 }
 
+// Función para copiar el texto cifrado al portapapeles
 function copiarTexto() {
-    var textoCifrado = document.getElementById("texto2").value;
-    navigator.clipboard.writeText(textoCifrado)
+    var textoCifrado = document.getElementById("texto2").value; // Obtener el texto cifrado
+    navigator.clipboard.writeText(textoCifrado) // Copiar el texto cifrado al portapapeles utilizando la API del navegador
         .then(function() {
-            alert("Texto copiado al portapapeles correctamente");
+            alert("Texto copiado al portapapeles correctamente"); // Mostrar mensaje de éxito
         })
         .catch(function(error) {
-            console.error("Error al copiar texto: ", error);
+            console.error("Error al copiar texto: ", error); // Mostrar mensaje de error en la consola
         });
 }

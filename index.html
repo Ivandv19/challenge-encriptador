@@ -7,52 +7,50 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
-    <header>
-        <div class="cajaLogo">
+    <main>
+        <div class="container-logo">
             <img src="img/Logo.png" class='imgLogo' alt="logoAlura">
         </div>
-
-    </header>
-
-    <main>
-
-        <section class="encriptar">
-            <textarea name="" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
+        <div class="container-encriptar">
+            <div class="container-texto">
+                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui"
+                    required></textarea>
+            </div>
             <p>&#33; Solo letras minúsculas</p>
             <section id="botones">
                 <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
                 <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
             </section>
-        </section>
-
-        <section class="desencriptar">
-            <div class="imgMuñeco">
-                <img src="img/Muñeco.png" id="imgMuñeco" alt="imagenMuñeco">
+        </div>
+        <div class="container-desencriptar">
+            <div class="container-info">
+                <div class="container-img">
+                    <img src="img/Muñeco.png" id="imgMuñeco" alt="">
+                </div>
+                <div class="container-text">
+                    <p>Ningun mensaje fue encontrado</p>
+                    <br>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="container-texto2" id="container-texto2" style="display: none;">
+                    <textarea name="" id="texto2" cols="23" rows="17"></textarea>
+                </div>
+                <div class="container-botoncopiar" id="container-botoncopiar" style="display: none;">
+                    <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto Cifrado</button>
+                </div>
             </div>
-            <div>
-                <p>Ningun mensaje fue encontrado</p>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-            <div id="texto2Container" style="display: none;">
-                <textarea name="" id="texto2" cols="30" rows="10"></textarea>
-            </div>
-            <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto Cifrado</button>
-        </section>
+        </div>
 
 
     </main>
-
     <footer>
-        <div class="cajaF">
+        <div class="container-footer">
             <p>Creado por Ivan Cruz - Estudiante ONE (G6) - Oracle Next Education - 🇲🇽 2024 </p>
         </div>
     </footer>
-
     <script src="app.js"></script>
 
 </body>
