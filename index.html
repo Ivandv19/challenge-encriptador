@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -19,10 +21,15 @@
 
         <section class="container-encriptar">
             <div class="container-texto">
-                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
+                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui"
+                    required></textarea>
             </div>
-            <p>&#33; Solo letras minúsculas</p>
-            <div id="botones">
+
+            <div class="container-aviso">
+                <img src="img/aviso.png" alt="aviso">
+            </div>
+
+            <div class="container-botones">
                 <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
                 <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
             </div>
@@ -33,16 +40,14 @@
                 <div class="container-img">
                     <img src="img/Muñeco.png" id="imgMuñeco" alt="">
                 </div>
-                <div class="container-text">
-                    <p>Ningun mensaje fue encontrado</p>
-                    <br>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div class="container-aviso2">
+                    <img src="img/aviso2.png" id="aviso2" alt="">
                 </div>
                 <div class="container-texto2" id="container-texto2" style="display: none;">
-                    <textarea name="" id="texto2" cols="23" rows="17"></textarea>
-                </div>
-                <div class="container-botoncopiar" id="container-botoncopiar" style="display: none;">
-                    <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto Cifrado</button>
+                    <textarea name="" id="texto2" cols="23" rows="15"></textarea>
+                    <div class="container-botoncopiar" id="container-botoncopiar" style="display: none;">
+                        <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto Cifrado</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -51,11 +56,12 @@
 
     <footer>
         <div class="container-footer">
-            <p>Creado por Ivan Cruz - 2024 🇲🇽 <br>  Estudiante ONE (G6) - Oracle Next Education </p>
+            <p>Creado por Ivan Cruz - 2024 🇲🇽 <br> Estudiante ONE (G6) - Oracle Next Education </p>
         </div>
     </footer>
-    
+
     <script src="app.js"></script>
 
 </body>
+
 </html>

@@ -64,33 +64,51 @@ main {
 }
 
 /* Estilos para los párrafos dentro del contenedor de encriptación */
-.container-encriptar p {
-    color: black; /* Color del texto */
-    position: absolute; /* Posición absoluta */
-    top: 675px; /* Desplazamiento desde arriba */
-    left: 80px; /* Desplazamiento desde la izquierda */
+.container-aviso {
+   position: relative;
+   width: 100%;
+   height: auto;
+   top: 200px;
+}
+
+.container-info #imgMuñeco {
+    width: 229px; /* Ancho fijo */
+    height: 18px; /* Altura fija */
 }
 
 /* Estilos para el contenedor de los botones */
-.container-encriptar #botones {
+.container-botones {
     position: relative; /* Posición relativa */
     width: 100%; /* Ancho completo */
     height: auto; /* Altura automática */
     display: flex; /* Flexbox */
     justify-content: center; /* Alineación del contenido */
-    top: 250px; /* Desplazamiento desde arriba */
+    top: 200px; /* Desplazamiento desde arriba */
 }
 
 /* Estilos para los botones de encriptación */
-.container-encriptar button {
-    width: 350px; /* Ancho fijo */
+#botonCifrar {
+    color: white;
+    width: 50%; /* Ancho fijo */
     height: 55px; /* Altura fija */
     margin: 1px 10px; /* Margen exterior */
     background: #0A3871; /* Color de fondo */
     border-radius: 25px; /* Radio de borde */
     padding: 16px 24px; /* Relleno interno */
     border: none; /* Sin borde */
-    color: #F3F3F3; /* Color del texto */
+
+}
+
+#botonDescifrar{
+    color: #000000;
+    width: 50%; /* Ancho fijo */
+    height: 55px; /* Altura fija */
+    margin: 1px 10px; /* Margen exterior */
+    border-radius: 25px; /* Radio de borde */
+    padding: 16px 24px; /* Relleno interno */
+    border: none; /* Sin borde */
+    background-color: #0a387159;
+    border: 2px solid #0A3871; /* Borde sólido */
 }
 
 
@@ -101,16 +119,20 @@ main {
     height: 850px; /* Altura fija */
     padding: 3rem; /* Relleno interno */
     float: left; /* Flotar a la izquierda */
+    display: flex;
+    justify-content: center;
 }
 
 /* Estilos para el contenedor de información */
 .container-info {
-    display: block; /* Mostrar como bloque */
     position: relative; /* Posición relativa */
     width: 400px; /* Ancho fijo */
     height: 100%; /* Altura completa */
     border-radius: 24px; /* Radio de borde */
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); /* Sombra */
+    display: flex;
+    flex-direction: column; /* Dirección de contenido en columna */
+    align-items: center; /* Alineación del contenido */
 }
 
 /* Estilos para el contenedor de imagen */
@@ -118,71 +140,73 @@ main {
     position: relative; /* Posición relativa */
     width: 336px; /* Ancho fijo */
     height: 304px; /* Altura fija */
-    align-items: center; /* Alineación de elementos */
-    margin: 0 auto; /* Margen automático */
+    margin: 0 auto;
     top: 150px; /* Desplazamiento desde arriba */
 }
 
 /* Estilos para la imagen del muñeco */
-.container-info #imgMuñeco {
-    width: 336px; /* Ancho fijo */
-    height: 304px; /* Altura fija */
+.container-img #imgMuñeco {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
 }
 
 /* Estilos para el contenedor de texto */
-.container-text {
-    position: absolute; /* Posición absoluta */
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Dirección del contenido */
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
-    top: 500px; /* Desplazamiento desde arriba */
-    left: 0; /* Alineación desde la izquierda */
-    float: left; /* Flotar a la izquierda */
+.container-aviso2 {
+    position: relative;
+    width: 336px;
+    height: 122px;
+    margin: 0 auto;
+    top: 150px;
 }
 
-/* Estilos para los párrafos dentro del contenedor de texto */
-.container-text p {
-    font-size: 25px; /* Tamaño de la fuente */
-    position: relative; /* Posición relativa */
-    color: #000000; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    justify-content: center; /* Justificación del contenido */
+.container-aviso2 #aviso2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-/* Estilos para el contenedor del segundo texto */
+
 .container-texto2 {
     position: absolute; /* Posición absoluta */
     top: 1px; /* Desplazamiento desde arriba */
     background-color: white; /* Color de fondo */
-    margin: 0 auto; /* Margen automático */
-    width: 100%; /* Ancho completo */
-    height: 80%; /* Altura completa */
+    width: 400px; /* Ancho fijo */
+    height: 100%; /* Altura completa */
     border-radius: 24px; /* Radio de borde */
+    display: flex;
+    flex-direction: column; /* Dirección de contenido en columna */
+    align-items: center; /* Alineación del contenido */
+}
+#texto2{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    
 }
 
 /* Estilos para el contenedor del botón de copiar */
 .container-botoncopiar {
-    position: absolute; /* Posición relativa */
-    width: 100%; /* Ancho completo */
-    height: 20%; /* Altura automática */
-    display: flex; /* Flexbox */
+    position: relative;
     justify-content: center; /* Alineación del contenido */
-    bottom: 0; /* Alineación desde abajo */
+    width: 100%; /* Ancho fijo */
+    height: 55px; /* Altura fija */
+
 }
 
 /* Estilos para el botón de copiar */
-.container-botoncopiar button {
-    position: relative; /* Posición relativa */
-    width: 350px; /* Ancho fijo */
-    height: 55px; /* Altura fija */
-    margin: 0px auto; /* Margen automático */
+#botonCopiar {
+    position: relative;
     border-radius: 25px; /* Radio de borde */
     padding: 16px 24px; /* Relleno interno */
     color: #000000; /* Color del texto */
     cursor: pointer; /* Cursor al pasar */
     background-color: transparent; /* Color de fondo transparente */
     border: 2px solid #0A3871; /* Borde sólido */
+   
 }
 
 /* Estilos para el área de texto del contenedor 2 */
@@ -199,8 +223,6 @@ main {
 
 /* Estilos para el pie de página */
 footer {
-    position: relative; /* Posición relativa */
-    display: flex; /* Flexbox */
     width: 100%; /* Ancho completo */
     height: 100%; /* Altura completa */
 }
@@ -226,6 +248,7 @@ footer {
     .container-texto,
     .container-texto textarea,
     .container-info,
+    .container-texto2,
     .container-botoncopiar {
         width: 100%; /* Ancho completo */
         display: block; /* Mostrar como bloque */
@@ -245,18 +268,11 @@ footer {
         display: none; /* Ocultar la imagen */
     }
 
-    .container-text {
-        flex-direction: column; /* Dirección de contenido en columna */
-        width: 100%; /* Ancho completo */
-        text-align: center; /* Alineación del texto */
-        margin: 0 auto; /* Margen automático */
-        top: 20px; /* Desplazamiento desde arriba */
-        left: 0; /* Alineación desde la izquierda */
+    .container-aviso2 {
+        margin: 0 auto;
+        top: 10px;
     }
-
-    .container-text p {
-        font-size: 23px; /* Tamaño de fuente */
-    }
+   
 }
 
     /* Estilos para pantallas de menos de 767px */
@@ -268,6 +284,7 @@ footer {
     .container-texto textarea,
     .container-desencriptar,
     .container-info,
+    .container-texto2,
     .container-botoncopiar {
         width: 100%; /* Ancho completo */
         display: block; /* Mostrar como bloque */
@@ -278,12 +295,16 @@ footer {
         left: 0; /* Alinear desde la izquierda */
     }
 
-    .container-encriptar #botones {
+    .container-botones {
         flex-direction: column; /* Dirección de contenido en columna */
         align-items: center; /* Alineación del contenido */
     }
 
-    .container-encriptar button {
+    #botonCifrar {
+        width: 100%; /* Ancho completo */
+        margin: 5px 0; /* Margen superior e inferior */
+    }
+    #botonDescifrar{
         width: 100%; /* Ancho completo */
         margin: 5px 0; /* Margen superior e inferior */
     }
@@ -296,18 +317,10 @@ footer {
     .container-img {
         display: none; /* Ocultar la imagen */
     }
-    .container-text p {
-        font-size: 20px; /* Tamaño de fuente */
-    }
-
-    .container-text {
-        flex-direction: column; /* Dirección de contenido en columna */
-        width: 100%; /* Ancho completo */
-        text-align: center; /* Alineación del texto */
-        margin: 0 auto; /* Margen automático */
-        top: 20px; /* Desplazamiento desde arriba */
-        left: 0; /* Alineación desde la izquierda */
-        font-size: 20%; /* Tamaño de fuente */
+    .container-aviso2 {
+        width: 100%;
+        margin: 0 auto;
+        top: 10px;
     }
 }
 
