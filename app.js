@@ -1,8 +1,8 @@
 // Función para validar el texto ingresado antes de encriptar
 function validarInput() {
-    var input = document.getElementById('texto').value; // Obtener el valor del texto ingresado
-    var regex = /^[a-z\s]*$/; // Expresión regular para permitir solo letras minúsculas y espacios
-    if (!regex.test(input)) { // Si el texto no coincide con la expresión regular
+    const input = document.getElementById('texto').value.trim(); // Obtener el valor del texto ingresado y eliminar espacios en blanco
+    const regex = /^[a-z\s]*$/; // Expresión regular para permitir solo letras minúsculas y espacios
+    if (!regex.test(input) || input === "") { // Si el texto no coincide con la expresión regular o está vacío
         alert('El texto ingresado no es válido. Por favor, use solo letras minúsculas sin acentos ni caracteres especiales.'); // Mostrar mensaje de alerta
         return false; // Devolver falso
     } else { // Si el texto es válido
@@ -41,7 +41,8 @@ function encriptar() {
     const textoCifrado = arr.join(''); // Unir los caracteres encriptados para formar el texto cifrado
     console.log(textoCifrado); // Mostrar el texto cifrado en la consola
     document.getElementById("texto2").value = textoCifrado; // Establecer el texto cifrado en el segundo textarea
-    document.getElementById("container-texto2").style.display = "block"; // Mostrar el contenedor del segundo textarea
+    document.getElementById('container-info').style.display='none';
+    document.getElementById("container-info2").style.display = "flex"; // Mostrar el contenedor del segundo textarea
     document.getElementById("container-botoncopiar").style.display = 'flex';
 }
 
@@ -61,7 +62,7 @@ function desencriptar() {
 
 // Función para copiar el texto cifrado al portapapeles
 function copiarTexto() {
-    var textoCifrado = document.getElementById("texto2").value; // Obtener el texto cifrado
+    const textoCifrado = document.getElementById("texto2").value; // Obtener el texto cifrado
     navigator.clipboard.writeText(textoCifrado) // Copiar el texto cifrado al portapapeles utilizando la API del navegador
         .then(function() {
             alert("Texto copiado al portapapeles correctamente"); // Mostrar mensaje de éxito

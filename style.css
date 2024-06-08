@@ -6,44 +6,54 @@
 }
 
 /* Estilos para el elemento principal 'main' */
+
+header{
+    display: flex;
+    width: 100%;
+}
 main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
     width: 100%; /* Ancho completo */
-    height: 850px; /* Altura fija */
+    height: auto; /* Altura fija */
+    justify-content: space-around;
+    padding: 60px 200px
 }
 
 /* Estilos para el contenedor del logo */
 .container-logo {
-    position: relative; /* Posición relativa */
-    width: 20%; /* Ancho fijo */
-    height: 100%; /* Altura completa */
-    top: 5%; /* Desplazamiento desde arriba */
     padding: 3rem; /* Relleno interno */
-    float: left; /* Flotar a la izquierda */
 }
 
 /* Estilos para la imagen del logo */
 .imgLogo {
-    position: absolute; /* Posición absoluta */
-    width: 120px; /* Ancho fijo */
-    height: 48px; /* Altura fija */
-    right: 0; /* Alineación desde la derecha */
+ 
+    width: 100%; /* Ancho fijo */
+    height: 100%; /* Altura fija */
+  
 }
 
 /* Estilos para el contenedor de encriptación */
 .container-encriptar {
-    position: relative; /* Posición relativa */
-    width: 40%; /* Ancho fijo */
-    height: 850px; /* Altura fija */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%; /* Ancho fijo */
+    height: 75vh;
+    gap: 10px;
     padding: 3rem; /* Relleno interno */
-    float: left; /* Flotar a la izquierda */
+   
+  
 }
 
 /* Estilos para el contenedor de texto */
 .container-texto {
-    position: relative; /* Posición relativa */
+   
     width: 100%; /* Ancho completo */
-    height: 400px; /* Altura fija */
-    top: 100px; /* Desplazamiento desde arriba */
+    height: 50vh;; /* Altura fija */
+  
 }
 
 /* Estilos para el marcador de posición del texto */
@@ -57,6 +67,7 @@ main {
 /* Estilos para el área de texto de encriptación */
 .container-encriptar textarea {
     width: 100%; /* Ancho completo */
+    height: auto;
     color: black; /* Color del texto */
     text-align: left; /* Alineación del texto */
     font-size: 32px; /* Tamaño de la fuente */
@@ -65,10 +76,10 @@ main {
 
 /* Estilos para los párrafos dentro del contenedor de encriptación */
 .container-aviso {
-   position: relative;
+  
    width: 100%;
    height: auto;
-   top: 200px;
+
 }
 
 .container-info #imgMuñeco {
@@ -78,12 +89,12 @@ main {
 
 /* Estilos para el contenedor de los botones */
 .container-botones {
-    position: relative; /* Posición relativa */
+ 
     width: 100%; /* Ancho completo */
     height: auto; /* Altura automática */
     display: flex; /* Flexbox */
     justify-content: center; /* Alineación del contenido */
-    top: 200px; /* Desplazamiento desde arriba */
+  
 }
 
 /* Estilos para los botones de encriptación */
@@ -100,32 +111,28 @@ main {
 }
 
 #botonDescifrar{
-    color: #000000;
+    color: #0A3871;
     width: 50%; /* Ancho fijo */
     height: 55px; /* Altura fija */
     margin: 1px 10px; /* Margen exterior */
     border-radius: 25px; /* Radio de borde */
     padding: 16px 24px; /* Relleno interno */
     border: none; /* Sin borde */
-    background-color: #0a387159;
+    background-color: white;
     border: 2px solid #0A3871; /* Borde sólido */
 }
 
 
 /* Estilos para el contenedor de desencriptación */
 .container-desencriptar {
-    position: relative; /* Posición relativa */
-    width: 40%; /* Ancho fijo */
-    height: 850px; /* Altura fija */
-    padding: 3rem; /* Relleno interno */
-    float: left; /* Flotar a la izquierda */
+    width: 30%; /* Ancho fijo */
+    height: 70vh; /* Altura fija */
     display: flex;
-    justify-content: center;
+  
 }
 
 /* Estilos para el contenedor de información */
 .container-info {
-    position: relative; /* Posición relativa */
     width: 400px; /* Ancho fijo */
     height: 100%; /* Altura completa */
     border-radius: 24px; /* Radio de borde */
@@ -133,20 +140,18 @@ main {
     display: flex;
     flex-direction: column; /* Dirección de contenido en columna */
     align-items: center; /* Alineación del contenido */
+    justify-content: center;
+    gap: 25px;
 }
 
 /* Estilos para el contenedor de imagen */
 .container-img {
-    position: relative; /* Posición relativa */
-    width: 336px; /* Ancho fijo */
-    height: 304px; /* Altura fija */
-    margin: 0 auto;
-    top: 150px; /* Desplazamiento desde arriba */
+    width: auto; /* Ancho fijo */
+    height: auto; /* Altura fija */
 }
 
 /* Estilos para la imagen del muñeco */
 .container-img #imgMuñeco {
-    position: relative;
     width: 100%;
     height: 100%;
 
@@ -154,72 +159,66 @@ main {
 
 /* Estilos para el contenedor de texto */
 .container-aviso2 {
-    position: relative;
+    
     width: 336px;
     height: 122px;
-    margin: 0 auto;
-    top: 150px;
+   
+
 }
 
 .container-aviso2 #aviso2 {
-    position: relative;
     width: 100%;
     height: 100%;
 }
 
 
-.container-texto2 {
-    position: absolute; /* Posición absoluta */
-    top: 1px; /* Desplazamiento desde arriba */
-    background-color: white; /* Color de fondo */
+.container-info2 {
     width: 400px; /* Ancho fijo */
     height: 100%; /* Altura completa */
     border-radius: 24px; /* Radio de borde */
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); /* Sombra */
     display: flex;
-    flex-direction: column; /* Dirección de contenido en columna */
-    align-items: center; /* Alineación del contenido */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+   
 }
-#texto2{
-    position: relative;
-    width: 100%;
-    height: 80%;
-    margin: 0;
-    padding: 0;
-    
+
+.container-info2 textarea{
+    padding: 20px 20px;
+    color: #0A3871; /* Color del texto */
+    border: none;
+    border-radius: 24px;
+    font-weight: 400; /* Peso de la fuente */
+    font-size: 32px; /* Tamaño de la fuente */
+    width: 100%; /* Ancho del textarea */
+    height: 80%; /* Altura del textarea */
+  
+
 }
+
 
 /* Estilos para el contenedor del botón de copiar */
 .container-botoncopiar {
-    position: relative;
-    justify-content: center; /* Alineación del contenido */
-    width: 100%; /* Ancho fijo */
-    height: 55px; /* Altura fija */
-
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 /* Estilos para el botón de copiar */
 #botonCopiar {
-    position: relative;
+    width: 80%;
     border-radius: 25px; /* Radio de borde */
     padding: 16px 24px; /* Relleno interno */
-    color: #000000; /* Color del texto */
+    color: #0A3871; /* Color del texto */
     cursor: pointer; /* Cursor al pasar */
     background-color: transparent; /* Color de fondo transparente */
     border: 2px solid #0A3871; /* Borde sólido */
    
 }
 
-/* Estilos para el área de texto del contenedor 2 */
-.container-texto2 textarea {
-    position: absolute; /* Posición absoluta */
-    margin: 20px 20px; /* Margen externo */
-    color: #0A3871; /* Color del texto */
-    font-weight: 400; /* Peso de la fuente */
-    font-size: 32px; /* Tamaño de la fuente */
-    width: 90%; /* Ancho del textarea */
-    height: 80%; /* Altura del textarea */
-    border: none; /* Sin borde */
-}
+
 
 /* Estilos para el pie de página */
 footer {
@@ -232,95 +231,175 @@ footer {
     width: 100%; /* Ancho completo */
     height: 100%; /* Altura completa */
     background-color: #0A3871; /* Color de fondo */
-    padding: 3% 0; /* Relleno interno */
+    padding: 50px;
     text-align: center; /* Alineación del texto */
     justify-content: center; /* Justificación del contenido */
     color: #F3F3F3; /* Color del texto */
-    clear: both; /* Limpieza del flujo de elementos */
+
 }
 
 
 /* Estilos para pantallas de 768px a 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* Todos los elementos siguientes se ajustan al ancho completo y se muestran como bloques centrados */
-    .container-logo,
-    .container-encriptar,
-    .container-texto,
-    .container-texto textarea,
-    .container-info,
-    .container-texto2,
-    .container-botoncopiar {
-        width: 100%; /* Ancho completo */
-        display: block; /* Mostrar como bloque */
-        justify-content: center; /* Centrar contenido horizontalmente */
-        align-items: center; /* Centrar contenido verticalmente */
+    body{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    main{
+        padding: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+       
     }
 
     .container-logo{
-        left: 0; /* Alinear desde la izquierda */
-    }
-    .container-desencriptar{
-        width: 100%; /* Ancho completo */
-        height: 50%; /* Altura del 50% del contenedor */
+        padding: 25px 0;
     }
 
-    .container-img {
-        display: none; /* Ocultar la imagen */
-    }
-
-    .container-aviso2 {
-        margin: 0 auto;
-        top: 10px;
+    .container-encriptar{
+        width: 100%;
+        height: auto;
     }
    
+    .container-desencriptar{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+    }
+    .container-img{
+        display: none;
+    }
+    .container-img img{
+        display: none;
+    }
+
+    .container-info2{
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+    .container-botoncopiar{
+        width: 100%;
+    }
+    #botonCopiar{
+        width: 100%;
+    }
 }
 
     /* Estilos para pantallas de menos de 767px */
 @media only screen and (max-width: 767px) {
-    /* Todos los elementos siguientes se ajustan al ancho completo y se muestran como bloques centrados */
-    .container-logo,
-    .container-encriptar,
-    .container-texto,
-    .container-texto textarea,
-    .container-desencriptar,
-    .container-info,
-    .container-texto2,
-    .container-botoncopiar {
-        width: 100%; /* Ancho completo */
-        display: block; /* Mostrar como bloque */
-        justify-content: center; /* Centrar contenido horizontalmente */
-        align-items: center; /* Centrar contenido verticalmente */
+    body{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-    .container-logo{
-        left: 0; /* Alinear desde la izquierda */
+    
+    header{
+        display: flex;
+        width: 100%;
+        height: auto;
     }
 
-    .container-botones {
-        flex-direction: column; /* Dirección de contenido en columna */
-        align-items: center; /* Alineación del contenido */
+    main{
+        padding: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+   
+    }
+
+    .container-logo{
+        padding: 25px 0;
+    }
+
+
+    .container-encriptar{
+        width: 100%;
+        height: auto;
+    }
+    .container-botones{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+
     }
 
     #botonCifrar {
-        width: 100%; /* Ancho completo */
-        margin: 5px 0; /* Margen superior e inferior */
+        width: 100%; /* Ancho fijo */
+        margin: 0;
+    
     }
+    
     #botonDescifrar{
-        width: 100%; /* Ancho completo */
-        margin: 5px 0; /* Margen superior e inferior */
-    }
-
-    .container-desencriptar{
-        width: 100%; /* Ancho completo */
-        height: 50%; /* Altura del 50% del contenedor */
-    }
-
-    .container-img {
-        display: none; /* Ocultar la imagen */
-    }
-    .container-aviso2 {
+     
         width: 100%;
-        margin: 0 auto;
-        top: 10px;
+        margin: 0;
+     
     }
+   
+    .container-desencriptar{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+    }
+    .container-img{
+        display: none;
+    }
+    .container-img img{
+        display: none;
+    }
+
+    .container-aviso2{
+        width: 100%;
+    }
+    .container-aviso2 img{
+        width: 100%;
+    }
+
+    .container-info2{
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+    .container-botoncopiar{
+        width: 100%;
+    }
+    #botonCopiar{
+        width: 100%;
+        margin: 0;
+    }
+   
 }
 
