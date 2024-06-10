@@ -3,51 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Configura el conjunto de caracteres del documento -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura el viewport para que el diseño sea adecuado en dispositivos móviles -->
     <title>Encriptador</title>
+    <!-- Título de la página -->
     <link rel="stylesheet" href="reset.css">
+    <!-- Enlace al archivo de estilo reset.css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Enlace al archivo de estilo style.css -->
 </head>
 
 <body>
     <header>
+        <!-- Encabezado del documento -->
         <div class="container-logo">
+            <!-- Contenedor para el logo -->
             <img src="img/Logo.png" class='imgLogo' alt="logoAlura">
+            <!-- Logo de Alura -->
         </div>
     </header>
 
     <main>
-
+        <!-- Contenido principal de la página -->
         <section class="container-encriptar">
+            <!-- Sección para encriptar texto -->
             <div class="container-texto">
-                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui"
-                    required></textarea>
+                <!-- Contenedor del área de texto -->
+                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
+                <!-- Área de texto donde el usuario ingresa el texto a encriptar -->
             </div>
 
             <div class="container-aviso">
+                <!-- Contenedor para la imagen de aviso -->
                 <img src="img/aviso.png" alt="aviso">
+                <!-- Imagen de aviso -->
             </div>
 
             <div class="container-botones">
+                <!-- Contenedor para los botones -->
                 <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
+                <!-- Botón para encriptar el texto, llama a la función validarInput() -->
                 <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
+                <!-- Botón para desencriptar el texto, llama a la función desencriptar() -->
             </div>
         </section>
 
         <section class="container-desencriptar">
+            <!-- Sección para desencriptar texto -->
             <div class="container-info" id="container-info">
+                <!-- Contenedor para la información inicial -->
                 <div class="container-img">
+                    <!-- Contenedor para la imagen del muñeco -->
                     <img src="img/Muñeco.png" id="imgMuñeco" alt="">
+                    <!-- Imagen del muñeco -->
                 </div>
                 <div class="container-aviso2">
+                    <!-- Contenedor para la segunda imagen de aviso -->
                     <img src="img/aviso2.png" id="aviso2" alt="">
+                    <!-- Segunda imagen de aviso -->
                 </div>
-                
             </div>
             <div class="container-info2" id="container-info2" style="display: none;">
-                <textarea name="xd" id="texto2" ></textarea>
+                <!-- Contenedor para la información tras desencriptar, inicialmente oculto -->
+                <textarea name="xd" id="texto2"></textarea>
+                <!-- Área de texto donde se muestra el texto desencriptado -->
                 <div class="container-botoncopiar" id="container-botoncopiar" style="display: none;">
+                    <!-- Contenedor para el botón de copiar, inicialmente oculto -->
                     <button id="botonCopiar" onclick="copiarTexto()">Copiar</button>
+                    <!-- Botón para copiar el texto desencriptado, llama a la función copiarTexto() -->
                 </div>
             </div>
         </section>
@@ -55,12 +79,16 @@
     </main>
 
     <footer>
+        <!-- Pie de página del documento -->
         <div class="container-footer">
+            <!-- Contenedor del pie de página -->
             <p>Creado por Ivan Cruz - 2024 🇲🇽 <br> Estudiante ONE (G6) - Oracle Next Education </p>
+            <!-- Información del creador -->
         </div>
     </footer>
 
     <script src="app.js"></script>
+    <!-- Enlace al archivo JavaScript principal -->
 
 </body>
 
