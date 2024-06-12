@@ -1,12 +1,11 @@
-/* Estilos para resetear márgenes, rellenos y el modelo de caja */
+/* Resetear márgenes, rellenos y modelo de caja */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos para el elemento principal 'main' */
-
+/* Estilos para el header */
 header {
     display: flex;
     width: 100%;
@@ -17,84 +16,51 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* Ancho completo */
-    height: auto;
-    /* Altura fija */
     justify-content: space-around;
-    padding: 60px 200px
+    padding: 60px 200px;
 }
 
-/* Estilos para el contenedor del logo */
 .container-logo {
     padding: 3rem;
-    /* Relleno interno */
 }
 
-/* Estilos para la imagen del logo */
 .imgLogo {
-
     width: 100%;
-    /* Ancho fijo */
     height: 100%;
-    /* Altura fija */
-
 }
 
-/* Estilos para el contenedor de encriptación */
 .container-encriptar {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 60%;
-    /* Ancho fijo */
     height: 75vh;
     gap: 10px;
     padding: 3rem;
-    /* Relleno interno */
-
-
 }
 
-/* Estilos para el contenedor de texto */
 .container-texto {
-
     width: 100%;
-    /* Ancho completo */
     height: 50vh;
-    ;
-    /* Altura fija */
-
 }
 
-/* Estilos para el marcador de posición del texto */
 #texto::placeholder {
     color: #0A3871;
-    /* Color del texto */
     font-weight: 400;
-    /* Peso de la fuente */
     font-size: 32px;
-    /* Tamaño de la fuente */
     text-align: start;
-    /* Alineación del texto */
 }
 
-/* Estilos para el área de texto de encriptación */
 .container-encriptar textarea {
     width: 100%;
-    /* Ancho completo */
     height: auto;
     color: black;
-    /* Color del texto */
     text-align: left;
-    /* Alineación del texto */
     font-size: 32px;
-    /* Tamaño de la fuente */
     border: none;
-    /* Sin borde */
 }
 
-/* Estilos para los párrafos dentro del contenedor de encriptación */
 .container__aviso {
     width: 100%;
     height: auto;
@@ -103,7 +69,6 @@ main {
     gap: 5px;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .container__aviso p {
@@ -116,118 +81,75 @@ main {
 
 .container-info #imgMuñeco {
     width: 229px;
-    /* Ancho fijo */
     height: 18px;
-    /* Altura fija */
 }
 
-/* Estilos para el contenedor de los botones */
 .container-botones {
-
     width: 100%;
-    /* Ancho completo */
     height: auto;
-    /* Altura automática */
     display: flex;
-    /* Flexbox */
     justify-content: center;
-    /* Alineación del contenido */
-
 }
 
-/* Estilos para los botones de encriptación */
+#botonCifrar, #botonDescifrar {
+    width: 50%;
+    height: 55px;
+    margin: 1px 10px;
+    border-radius: 25px;
+    padding: 16px 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    border: none;
+}
+
 #botonCifrar {
     color: white;
-    width: 50%;
-    /* Ancho fijo */
-    height: 55px;
-    /* Altura fija */
-    margin: 1px 10px;
-    /* Margen exterior */
     background: #0A3871;
-    /* Color de fondo */
-    border-radius: 25px;
-    /* Radio de borde */
-    padding: 16px 24px;
-    /* Relleno interno */
-    border: none;
-    /* Sin borde */
-
 }
 
 #botonDescifrar {
     color: #0A3871;
-    width: 50%;
-    /* Ancho fijo */
-    height: 55px;
-    /* Altura fija */
-    margin: 1px 10px;
-    /* Margen exterior */
-    border-radius: 25px;
-    /* Radio de borde */
-    padding: 16px 24px;
-    /* Relleno interno */
-    border: none;
-    /* Sin borde */
     background-color: white;
     border: 2px solid #0A3871;
-    /* Borde sólido */
 }
 
-
-/* Estilos para el contenedor de desencriptación */
 .container-desencriptar {
     width: 30%;
-    /* Ancho fijo */
     height: 70vh;
-    /* Altura fija */
     display: flex;
-
 }
 
-/* Estilos para el contenedor de información */
 .container-info {
     width: 400px;
-    /* Ancho fijo */
     height: 100%;
-    /* Altura completa */
     border-radius: 24px;
-    /* Radio de borde */
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
-    /* Sombra */
     display: flex;
     flex-direction: column;
-    /* Dirección de contenido en columna */
     align-items: center;
-    /* Alineación del contenido */
     justify-content: center;
     gap: 25px;
     text-align: center;
 }
 
-/* Estilos para el contenedor de imagen */
 .container-img {
     width: auto;
-    /* Ancho fijo */
     height: auto;
-    /* Altura fija */
 }
 
-/* Estilos para la imagen del muñeco */
 .container-img #imgMuñeco {
     width: 100%;
     height: 100%;
-
 }
 
-/* Estilos para el contenedor de texto */
 .container__aviso2 {
     max-width: 336px;
     max-height: 122px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-
 }
 
 .msj1 {
@@ -235,113 +157,70 @@ main {
     font-weight: 700;
     font-size: 24px;
     line-height: 28.8px;
-
 }
 
-.msj2{
+.msj2 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
 
-
-
-
 .container-info2 {
     width: 400px;
-    /* Ancho fijo */
     height: 100%;
-    /* Altura completa */
     border-radius: 24px;
-    /* Radio de borde */
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
-    /* Sombra */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-
 }
 
 .container-info2 textarea {
-    padding: 20px 20px;
+    padding: 20px;
     color: #0A3871;
-    /* Color del texto */
     border: none;
     border-radius: 24px;
     font-weight: 400;
-    /* Peso de la fuente */
     font-size: 32px;
-    /* Tamaño de la fuente */
     width: 100%;
-    /* Ancho del textarea */
     height: 80%;
-    /* Altura del textarea */
-
-
 }
 
-
-/* Estilos para el contenedor del botón de copiar */
 .container-botoncopiar {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-/* Estilos para el botón de copiar */
 #botonCopiar {
     width: 80%;
     border-radius: 25px;
-    /* Radio de borde */
     padding: 16px 24px;
-    /* Relleno interno */
     color: #0A3871;
-    /* Color del texto */
     cursor: pointer;
-    /* Cursor al pasar */
     background-color: transparent;
-    /* Color de fondo transparente */
     border: 2px solid #0A3871;
-    /* Borde sólido */
-
 }
 
-
-
-/* Estilos para el pie de página */
 footer {
     width: 100%;
-    /* Ancho completo */
     height: 100%;
-    /* Altura completa */
 }
 
-/* Estilos para el contenedor del pie de página */
 .container-footer {
     width: 100%;
-    /* Ancho completo */
     height: 100%;
-    /* Altura completa */
     background-color: #0A3871;
-    /* Color de fondo */
     padding: 50px;
     text-align: center;
-    /* Alineación del texto */
     justify-content: center;
-    /* Justificación del contenido */
     color: #F3F3F3;
-    /* Color del texto */
-
 }
-
 
 /* Estilos para pantallas de 768px a 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    /* Todos los elementos siguientes se ajustan al ancho completo y se muestran como bloques centrados */
     body {
         width: 100%;
         height: auto;
@@ -349,7 +228,7 @@ footer {
         flex-direction: column;
     }
 
-    header {
+    header, main {
         display: flex;
         width: 100%;
         height: auto;
@@ -357,32 +236,20 @@ footer {
 
     main {
         padding: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
         flex-direction: column;
-
     }
 
     .container-logo {
         padding: 25px 0;
     }
 
-    .container-encriptar {
+    .container-encriptar, .container-desencriptar {
         width: 100%;
         height: auto;
-        padding: 48px 15px;
-    }
-
-    .container-desencriptar {
-        width: 100%;
-        height: auto;
-        justify-content: center;
         padding: 48px 15px;
     }
 
     .container-info {
-        display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
@@ -393,21 +260,13 @@ footer {
         display: none;
     }
 
-    .container-img img {
-        display: none;
-    }
-
     .container-info2 {
         width: 100%;
         height: auto;
         padding: 1em;
     }
 
-    .container-botoncopiar {
-        width: 100%;
-    }
-
-    #botonCopiar {
+    .container-botoncopiar, #botonCopiar {
         width: 100%;
     }
 }
@@ -421,7 +280,7 @@ footer {
         flex-direction: column;
     }
 
-    header {
+    header, main {
         display: flex;
         width: 100%;
         height: auto;
@@ -429,56 +288,32 @@ footer {
 
     main {
         padding: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
         flex-direction: column;
-
     }
 
     .container-logo {
         padding: 25px 0;
     }
 
-
-    .container-encriptar {
+    .container-encriptar, .container-desencriptar {
         width: 100%;
         height: auto;
         padding: 48px 15px;
+        justify-content: center;
     }
 
     .container-botones {
-        display: flex;
         flex-direction: column;
         width: 100%;
-        height: auto;
         gap: 15px;
-
     }
 
-    #botonCifrar {
-        width: 100%;
-        /* Ancho fijo */
-        margin: 0;
-
-    }
-
-    #botonDescifrar {
-
+    #botonCifrar, #botonDescifrar {
         width: 100%;
         margin: 0;
-
-    }
-
-    .container-desencriptar {
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        padding: 48px 15px;
     }
 
     .container-info {
-        display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
@@ -489,31 +324,14 @@ footer {
         display: none;
     }
 
-    .container-img img {
-        display: none;
-    }
-
-    .container-aviso2 {
+    .container-aviso2, .container-info2, .container-botoncopiar, #botonCopiar {
         width: 100%;
+        height: auto;
+        padding: 1em;
+        margin: 0;
     }
 
     .container-aviso2 img {
         width: 100%;
     }
-
-    .container-info2 {
-        width: 100%;
-        height: auto;
-        padding: 1em;
-    }
-
-    .container-botoncopiar {
-        width: 100%;
-    }
-
-    #botonCopiar {
-        width: 100%;
-        margin: 0;
-    }
-
 }
