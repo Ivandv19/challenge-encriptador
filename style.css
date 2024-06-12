@@ -7,31 +7,37 @@
 
 /* Estilos para el elemento principal 'main' */
 
-header{
+header {
     display: flex;
     width: 100%;
 }
+
 main {
     flex: 1;
     display: flex;
     flex-direction: row;
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura fija */
+    width: 100%;
+    /* Ancho completo */
+    height: auto;
+    /* Altura fija */
     justify-content: space-around;
     padding: 60px 200px
 }
 
 /* Estilos para el contenedor del logo */
 .container-logo {
-    padding: 3rem; /* Relleno interno */
+    padding: 3rem;
+    /* Relleno interno */
 }
 
 /* Estilos para la imagen del logo */
 .imgLogo {
- 
-    width: 100%; /* Ancho fijo */
-    height: 100%; /* Altura fija */
-  
+
+    width: 100%;
+    /* Ancho fijo */
+    height: 100%;
+    /* Altura fija */
+
 }
 
 /* Estilos para el contenedor de encriptación */
@@ -40,114 +46,171 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    width: 60%; /* Ancho fijo */
+    width: 60%;
+    /* Ancho fijo */
     height: 75vh;
     gap: 10px;
-    padding: 3rem; /* Relleno interno */
-   
-  
+    padding: 3rem;
+    /* Relleno interno */
+
+
 }
 
 /* Estilos para el contenedor de texto */
 .container-texto {
-   
-    width: 100%; /* Ancho completo */
-    height: 50vh;; /* Altura fija */
-  
+
+    width: 100%;
+    /* Ancho completo */
+    height: 50vh;
+    ;
+    /* Altura fija */
+
 }
 
 /* Estilos para el marcador de posición del texto */
 #texto::placeholder {
-    color: #0A3871; /* Color del texto */
-    font-weight: 400; /* Peso de la fuente */
-    font-size: 32px; /* Tamaño de la fuente */
-    text-align: start; /* Alineación del texto */
+    color: #0A3871;
+    /* Color del texto */
+    font-weight: 400;
+    /* Peso de la fuente */
+    font-size: 32px;
+    /* Tamaño de la fuente */
+    text-align: start;
+    /* Alineación del texto */
 }
 
 /* Estilos para el área de texto de encriptación */
 .container-encriptar textarea {
-    width: 100%; /* Ancho completo */
+    width: 100%;
+    /* Ancho completo */
     height: auto;
-    color: black; /* Color del texto */
-    text-align: left; /* Alineación del texto */
-    font-size: 32px; /* Tamaño de la fuente */
-    border: none; /* Sin borde */
+    color: black;
+    /* Color del texto */
+    text-align: left;
+    /* Alineación del texto */
+    font-size: 32px;
+    /* Tamaño de la fuente */
+    border: none;
+    /* Sin borde */
 }
 
 /* Estilos para los párrafos dentro del contenedor de encriptación */
-.container-aviso {
-  
-   width: 100%;
-   height: auto;
+.container__aviso {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
 
 }
 
+.container__aviso p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 80%;
+}
+
 .container-info #imgMuñeco {
-    width: 229px; /* Ancho fijo */
-    height: 18px; /* Altura fija */
+    width: 229px;
+    /* Ancho fijo */
+    height: 18px;
+    /* Altura fija */
 }
 
 /* Estilos para el contenedor de los botones */
 .container-botones {
- 
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
-    display: flex; /* Flexbox */
-    justify-content: center; /* Alineación del contenido */
-  
+
+    width: 100%;
+    /* Ancho completo */
+    height: auto;
+    /* Altura automática */
+    display: flex;
+    /* Flexbox */
+    justify-content: center;
+    /* Alineación del contenido */
+
 }
 
 /* Estilos para los botones de encriptación */
 #botonCifrar {
     color: white;
-    width: 50%; /* Ancho fijo */
-    height: 55px; /* Altura fija */
-    margin: 1px 10px; /* Margen exterior */
-    background: #0A3871; /* Color de fondo */
-    border-radius: 25px; /* Radio de borde */
-    padding: 16px 24px; /* Relleno interno */
-    border: none; /* Sin borde */
+    width: 50%;
+    /* Ancho fijo */
+    height: 55px;
+    /* Altura fija */
+    margin: 1px 10px;
+    /* Margen exterior */
+    background: #0A3871;
+    /* Color de fondo */
+    border-radius: 25px;
+    /* Radio de borde */
+    padding: 16px 24px;
+    /* Relleno interno */
+    border: none;
+    /* Sin borde */
 
 }
 
-#botonDescifrar{
+#botonDescifrar {
     color: #0A3871;
-    width: 50%; /* Ancho fijo */
-    height: 55px; /* Altura fija */
-    margin: 1px 10px; /* Margen exterior */
-    border-radius: 25px; /* Radio de borde */
-    padding: 16px 24px; /* Relleno interno */
-    border: none; /* Sin borde */
+    width: 50%;
+    /* Ancho fijo */
+    height: 55px;
+    /* Altura fija */
+    margin: 1px 10px;
+    /* Margen exterior */
+    border-radius: 25px;
+    /* Radio de borde */
+    padding: 16px 24px;
+    /* Relleno interno */
+    border: none;
+    /* Sin borde */
     background-color: white;
-    border: 2px solid #0A3871; /* Borde sólido */
+    border: 2px solid #0A3871;
+    /* Borde sólido */
 }
 
 
 /* Estilos para el contenedor de desencriptación */
 .container-desencriptar {
-    width: 30%; /* Ancho fijo */
-    height: 70vh; /* Altura fija */
+    width: 30%;
+    /* Ancho fijo */
+    height: 70vh;
+    /* Altura fija */
     display: flex;
-  
+
 }
 
 /* Estilos para el contenedor de información */
 .container-info {
-    width: 400px; /* Ancho fijo */
-    height: 100%; /* Altura completa */
-    border-radius: 24px; /* Radio de borde */
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); /* Sombra */
+    width: 400px;
+    /* Ancho fijo */
+    height: 100%;
+    /* Altura completa */
+    border-radius: 24px;
+    /* Radio de borde */
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
+    /* Sombra */
     display: flex;
-    flex-direction: column; /* Dirección de contenido en columna */
-    align-items: center; /* Alineación del contenido */
+    flex-direction: column;
+    /* Dirección de contenido en columna */
+    align-items: center;
+    /* Alineación del contenido */
     justify-content: center;
     gap: 25px;
+    text-align: center;
 }
 
 /* Estilos para el contenedor de imagen */
 .container-img {
-    width: auto; /* Ancho fijo */
-    height: auto; /* Altura fija */
+    width: auto;
+    /* Ancho fijo */
+    height: auto;
+    /* Altura fija */
 }
 
 /* Estilos para la imagen del muñeco */
@@ -158,43 +221,65 @@ main {
 }
 
 /* Estilos para el contenedor de texto */
-.container-aviso2 {
-    
-    width: 336px;
-    height: 122px;
-   
+.container__aviso2 {
+    max-width: 336px;
+    max-height: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
 }
 
-.container-aviso2 #aviso2 {
-    width: 100%;
-    height: 100%;
+.msj1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+
 }
+
+.msj2{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
 
 
 .container-info2 {
-    width: 400px; /* Ancho fijo */
-    height: 100%; /* Altura completa */
-    border-radius: 24px; /* Radio de borde */
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50); /* Sombra */
+    width: 400px;
+    /* Ancho fijo */
+    height: 100%;
+    /* Altura completa */
+    border-radius: 24px;
+    /* Radio de borde */
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.50);
+    /* Sombra */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-   
-   
+
+
 }
 
-.container-info2 textarea{
+.container-info2 textarea {
     padding: 20px 20px;
-    color: #0A3871; /* Color del texto */
+    color: #0A3871;
+    /* Color del texto */
     border: none;
     border-radius: 24px;
-    font-weight: 400; /* Peso de la fuente */
-    font-size: 32px; /* Tamaño de la fuente */
-    width: 100%; /* Ancho del textarea */
-    height: 80%; /* Altura del textarea */
-  
+    font-weight: 400;
+    /* Peso de la fuente */
+    font-size: 32px;
+    /* Tamaño de la fuente */
+    width: 100%;
+    /* Ancho del textarea */
+    height: 80%;
+    /* Altura del textarea */
+
 
 }
 
@@ -209,137 +294,160 @@ main {
 /* Estilos para el botón de copiar */
 #botonCopiar {
     width: 80%;
-    border-radius: 25px; /* Radio de borde */
-    padding: 16px 24px; /* Relleno interno */
-    color: #0A3871; /* Color del texto */
-    cursor: pointer; /* Cursor al pasar */
-    background-color: transparent; /* Color de fondo transparente */
-    border: 2px solid #0A3871; /* Borde sólido */
-   
+    border-radius: 25px;
+    /* Radio de borde */
+    padding: 16px 24px;
+    /* Relleno interno */
+    color: #0A3871;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cursor al pasar */
+    background-color: transparent;
+    /* Color de fondo transparente */
+    border: 2px solid #0A3871;
+    /* Borde sólido */
+
 }
 
 
 
 /* Estilos para el pie de página */
 footer {
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
 }
 
 /* Estilos para el contenedor del pie de página */
 .container-footer {
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    background-color: #0A3871; /* Color de fondo */
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    background-color: #0A3871;
+    /* Color de fondo */
     padding: 50px;
-    text-align: center; /* Alineación del texto */
-    justify-content: center; /* Justificación del contenido */
-    color: #F3F3F3; /* Color del texto */
+    text-align: center;
+    /* Alineación del texto */
+    justify-content: center;
+    /* Justificación del contenido */
+    color: #F3F3F3;
+    /* Color del texto */
 
 }
 
 
 /* Estilos para pantallas de 768px a 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
     /* Todos los elementos siguientes se ajustan al ancho completo y se muestran como bloques centrados */
-    body{
+    body {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    
-    header{
+
+    header {
         display: flex;
         width: 100%;
         height: auto;
     }
 
-    main{
+    main {
         padding: 0;
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-       
+
     }
 
-    .container-logo{
+    .container-logo {
         padding: 25px 0;
     }
 
-    .container-encriptar{
+    .container-encriptar {
         width: 100%;
         height: auto;
+        padding: 48px 15px;
     }
-   
-    .container-desencriptar{
+
+    .container-desencriptar {
         width: 100%;
         height: auto;
         justify-content: center;
-        padding: 3rem;
+        padding: 48px 15px;
     }
-    .container-info{
+
+    .container-info {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
         padding: 1em;
     }
-    .container-img{
-        display: none;
-    }
-    .container-img img{
+
+    .container-img {
         display: none;
     }
 
-    .container-info2{
+    .container-img img {
+        display: none;
+    }
+
+    .container-info2 {
         width: 100%;
         height: auto;
         padding: 1em;
     }
-    .container-botoncopiar{
+
+    .container-botoncopiar {
         width: 100%;
     }
-    #botonCopiar{
+
+    #botonCopiar {
         width: 100%;
     }
 }
 
-    /* Estilos para pantallas de menos de 767px */
+/* Estilos para pantallas de menos de 767px */
 @media only screen and (max-width: 767px) {
-    body{
+    body {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    
-    header{
+
+    header {
         display: flex;
         width: 100%;
         height: auto;
     }
 
-    main{
+    main {
         padding: 0;
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-   
+
     }
 
-    .container-logo{
+    .container-logo {
         padding: 25px 0;
     }
 
 
-    .container-encriptar{
+    .container-encriptar {
         width: 100%;
         height: auto;
+        padding: 48px 15px;
     }
-    .container-botones{
+
+    .container-botones {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -349,57 +457,63 @@ footer {
     }
 
     #botonCifrar {
-        width: 100%; /* Ancho fijo */
+        width: 100%;
+        /* Ancho fijo */
         margin: 0;
-    
+
     }
-    
-    #botonDescifrar{
-     
+
+    #botonDescifrar {
+
         width: 100%;
         margin: 0;
-     
+
     }
-   
-    .container-desencriptar{
+
+    .container-desencriptar {
         width: 100%;
         height: auto;
         justify-content: center;
-        padding: 3rem;
+        padding: 48px 15px;
     }
-    .container-info{
+
+    .container-info {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
-        padding: 1em;
-    }
-    .container-img{
-        display: none;
-    }
-    .container-img img{
-        display: none;
-    }
-
-    .container-aviso2{
-        width: 100%;
-    }
-    .container-aviso2 img{
-        width: 100%;
-    }
-
-    .container-info2{
         width: 100%;
         height: auto;
         padding: 1em;
     }
-    .container-botoncopiar{
+
+    .container-img {
+        display: none;
+    }
+
+    .container-img img {
+        display: none;
+    }
+
+    .container-aviso2 {
         width: 100%;
     }
-    #botonCopiar{
+
+    .container-aviso2 img {
+        width: 100%;
+    }
+
+    .container-info2 {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+
+    .container-botoncopiar {
+        width: 100%;
+    }
+
+    #botonCopiar {
         width: 100%;
         margin: 0;
     }
-   
-}
 
+}
