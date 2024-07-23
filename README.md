@@ -32,7 +32,6 @@ Este proyecto es una aplicación web simple que permite encriptar y desencriptar
 ## Créditos
 
 - Este proyecto fue desarrollado como parte de un ejercicio de desarrollo web.
-
 - Desarrollado por [Alura Latam](https://www.linkedin.com/company/alura-latam/).
 - Desarrollado por [Ivan Cruz](https://www.linkedin.com/in/ivan-cruz-1906mx/).
 
@@ -42,5 +41,4 @@ El sitio web está desplegado en Vercel y se puede acceder a través del siguien
 
 
 ## Licencia
-
 Este proyecto está bajo la Licencia MIT.
