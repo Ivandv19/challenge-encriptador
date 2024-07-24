@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main  # Ejecutar en la rama 'main'
+      - main
 
 jobs:
   release:
@@ -19,6 +19,5 @@ jobs:
     - name: Run semantic-release
       run: npx semantic-release
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-#codigo para configurar semantic-release
