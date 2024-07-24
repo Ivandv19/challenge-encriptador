@@ -3,24 +3,21 @@ name: Release
 on:
   push:
     branches:
-      - desarrollo  # Cambia esto si tu rama principal tiene otro nombre
+      - main  # Ejecutar en la rama 'main'
 
 jobs:
   release:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'  # O la versión de Node.js que estés usando
+    - name: Install dependencies
+      run: npm install
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Semantic Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+    - name: Run semantic-release
+      run: npx semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
