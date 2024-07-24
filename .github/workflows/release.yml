@@ -1,28 +1,19 @@
-name: encriptador
+name: Release
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   release:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20.14.0'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run semantic-release
-      run: npx semantic-release
-      env:
-        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.14.0
+      - run: npm ci
+      - run: npx semantic-release
+        env:
+          GH_TOKEN_ENCRIPTADOR_MAIN: ${{ secrets.GH_TOKEN_ENCRIPTADOR_MAIN }}
+          NPM_TOKEN_ENCRIPTADOR: ${{ secrets.NPM_TOKEN_ENCRIPTADOR }}
