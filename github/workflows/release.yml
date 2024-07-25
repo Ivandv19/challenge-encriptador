@@ -15,5 +15,5 @@ jobs:
       - run: npm ci
       - run: npx semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN_ENCRIPTADOR_MAIN: ${{ secrets.GH_TOKEN_ENCRIPTADOR_MAIN }}
+          NPM_TOKEN_ENCRIPTADOR: ${{ secrets.NPM_TOKEN_ENCRIPTADOR }}
