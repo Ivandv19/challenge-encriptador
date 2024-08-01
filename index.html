@@ -22,7 +22,7 @@
         <!-- Encabezado del documento -->
         <div class="container-logo">
             <!-- Contenedor para el logo -->
-            <img src="img/Logo.png" class='imgLogo' alt="logoAlura">
+            <img src="img/Logo.png" class="imgLogo" alt="logoAlura">
             <!-- Logo de Alura -->
         </div>
     </header>
@@ -33,7 +33,7 @@
             <!-- Sección para encriptar texto -->
             <div class="container-texto">
                 <!-- Contenedor del área de texto -->
-                <textarea name="" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui"
+                <textarea name="input1" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aquí"
                     required></textarea>
                 <!-- Área de texto donde el usuario ingresa el texto a encriptar -->
             </div>
@@ -41,7 +41,7 @@
             <div class="container__aviso">
                 <!-- Contenedor para la imagen de aviso -->
                 <div class="container__aviso__img">
-                    <img src="/img/aviso.png" alt="">
+                    <img src="/img/aviso.png" alt="imagen de aviso">
                 </div>
                 <p>Solo letras minúsculas y sin acentos</p>
                 <!-- Imagen de aviso -->
@@ -49,7 +49,7 @@
 
             <div class="container-botones">
                 <!-- Contenedor para los botones -->
-                <button id="botonCifrar" onclick="validarInput()">Encriptar</button>
+                <button id="botonCifrar" onclick="encriptar()">Encriptar</button>
                 <!-- Botón para encriptar el texto, llama a la función validarInput() -->
                 <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
                 <!-- Botón para desencriptar el texto, llama a la función desencriptar() -->
@@ -62,14 +62,14 @@
                 <!-- Contenedor para la información inicial -->
                 <div class="container-img">
                     <!-- Contenedor para la imagen del muñeco -->
-                    <img src="img/Muñeco.png" id="imgMuñeco" alt="">
+                    <img src="img/Muñeco.png" id="imgMuñeco" alt="imagen de un muñeco">
                     <!-- Imagen del muñeco -->
                 </div>
                 <div class="container__aviso2">
                     <!-- Contenedor para la segunda imagen de aviso -->
-                     <p class="msj1">Ningún mensaje fue encontrado</p>
-                     <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    
+                    <p class="msj1">Ningún mensaje fue encontrado</p>
+                    <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
                     <!-- Segunda imagen de aviso -->
                 </div>
             </div>
