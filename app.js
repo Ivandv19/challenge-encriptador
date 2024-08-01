@@ -52,7 +52,8 @@ function encriptar() {
 // Función para desencriptar el texto
 function desencriptar() {
     const textoCifrado = document.getElementById("texto").value.trim(); // Obtener el texto cifrado
-    const textoDescifrado = textoCifrado // Desencriptar el texto reemplazando cada encriptación por su vocal original
+    if (validarInput(textoCifrado)){
+        const textoDescifrado = textoCifrado // Desencriptar el texto reemplazando cada encriptación por su vocal original
         .replace(/ai/g, "a")
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
@@ -62,6 +63,13 @@ function desencriptar() {
     document.getElementById("container-info").style.display = "none";
     document.getElementById("container-info2").style.display = "flex"; // Mostrar el contenedor del segundo textarea
     document.getElementById("texto2").value = textoDescifrado; // Establecer el texto descifrado en el segundo textarea
+    } else{
+        alert('error al desencriptar texto')
+    }
+
+
+    
+    
 }
 
 // Función para copiar el texto cifrado al portapapeles utilizando async/await
