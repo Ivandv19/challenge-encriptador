@@ -219,8 +219,8 @@ footer {
     color: #F3F3F3;
 }
 
-/* Estilos para pantallas de 768px a 1024px */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+@media (min-width: 600px) and (max-width: 1199px) {
     body {
         width: 100%;
         height: auto;
@@ -271,8 +271,8 @@ footer {
     }
 }
 
-/* Estilos para pantallas de menos de 767px */
-@media only screen and (max-width: 767px) {
+
+@media (max-width: 599px) {
     body {
         width: 100%;
         height: auto;
