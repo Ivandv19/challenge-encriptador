@@ -10,12 +10,10 @@ Este proyecto es una aplicación web simple que permite encriptar y desencriptar
 
 ## Uso
 
-1. Clona este repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador web.
-3. Ingresa el texto que deseas encriptar en el área de texto.
-4. Haz clic en el botón "Encriptar" para encriptar el texto.
-5. Para desencriptar el texto, pega el texto encriptado en el área de texto y haz clic en "Desencriptar".
-6. Usa el botón "Copiar" para copiar el texto desencriptado al portapapeles.
+1. **Visualización del Proyecto:** Instala el repositorio de manera local o visita el enlace desplegado en [Vercel](https://encriptador-nine-eta.vercel.app/).
+2. **Encriptado de texto**: Ingresa el texto que deseas encriptar en el área de texto y haz clic en el botón "Encriptar" para encriptar el texto.
+3. **Desencriptado de texto**: Para desencriptar el texto, pega el texto encriptado en el área de texto y haz clic en "Desencriptar".
+5. **Copiar texto** Usa el botón "Copiar" para copiar el texto desencriptado al portapapeles.
 
 
 ## Tecnologías utilizadas
@@ -26,7 +24,10 @@ Este proyecto es una aplicación web simple que permite encriptar y desencriptar
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local.
+1. **Clonar el Repositorio:** Clona este repositorio en tu máquina local utilizando Git.
+```bash
+   https://github.com/IvandevI9/challenge-encriptador.git
+```
 2. Abre el archivo `index.html` en tu navegador web.
 
 ## Créditos
