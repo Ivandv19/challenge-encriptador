@@ -10,11 +10,10 @@ Este proyecto es una aplicación web simple que permite encriptar y desencriptar
 
 ## Uso
 
-1. **Visualización del Proyecto:** Instala el repositorio de manera local o visita el enlace desplegado en [Vercel](https://encriptador-nine-eta.vercel.app/).
-1.1 Abre el archivo `index.html` en tu navegador web.
-2. **Encriptado de texto**: Ingresa el texto que deseas encriptar en el área de texto y haz clic en el botón "Encriptar" para encriptar el texto.
-3. **Desencriptado de texto**: Para desencriptar el texto, pega el texto encriptado en el área de texto y haz clic en "Desencriptar".
-4. **Copiar texto** Usa el botón "Copiar" para copiar el texto desencriptado al portapapeles.
+1. **Visualización del Proyecto:** Instala el repositorio de manera local y abre el archivo `index.html` en tu navegador web o visita el enlace desplegado en [Vercel](https://encriptador-nine-eta.vercel.app/).
+3. **Encriptado de texto**: Ingresa el texto que deseas encriptar en el área de texto y haz clic en el botón "Encriptar" para encriptar el texto.
+4. **Desencriptado de texto**: Para desencriptar el texto, pega el texto encriptado en el área de texto y haz clic en "Desencriptar".
+5. **Copiar texto** Usa el botón "Copiar" para copiar el texto desencriptado al portapapeles.
 
 
 ## Tecnologías utilizadas
