@@ -5,39 +5,45 @@
     box-sizing: border-box;
 }
 
-/* Estilos para el header */
-header {
-    display: flex;
-    width: 100%;
+
+html{
+
 }
 
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: auto auto;
     width: 100%;
-    justify-content: space-around;
-    padding: 60px 200px;
+    height: 100vh;
+
+
 }
 
 .container-logo {
-    padding: 3rem;
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgLogo {
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: auto;
+
 }
 
 .container-encriptar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    grid-row: 2;
+    grid-column: 2;
     flex-direction: column;
-    width: 60%;
-    height: 75vh;
-    gap: 10px;
-    padding: 3rem;
+    width: 100%;
+    height: 70vh;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-texto {
@@ -59,6 +65,12 @@ main {
     text-align: left;
     font-size: 32px;
     border: none;
+    padding: 10px;
+}
+
+.container-encriptar textarea.error {
+    border: 1px solid red;
+    border-radius: 10px;
 }
 
 .container__aviso {
@@ -91,7 +103,8 @@ main {
     justify-content: center;
 }
 
-#botonCifrar, #botonDescifrar {
+#botonCifrar,
+#botonDescifrar {
     width: 50%;
     height: 55px;
     margin: 1px 10px;
@@ -102,6 +115,8 @@ main {
     font-size: 16px;
     line-height: 19.36px;
     border: none;
+    transition: background-color 0.1s, color 0.1s;
+
 }
 
 #botonCifrar {
@@ -115,10 +130,35 @@ main {
     border: 2px solid #0A3871;
 }
 
+/* Efecto hover */
+#botonCifrar:hover {
+    background-color: #042b4b;
+    /* Un tono más oscuro */
+}
+
+#botonDescifrar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+#botonCifrar:active {
+    background-color: #3b0000;
+
+}
+
+#botonDescifrar:active {
+    background-color: #3b0000;
+
+}
+
 .container-desencriptar {
-    width: 30%;
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
     height: 70vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .container-info {
@@ -204,6 +244,24 @@ main {
     border: 2px solid #0A3871;
 }
 
+
+#botonCopiar:hover {
+    background-color: #042b4b;
+}
+
+#botonCopiar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+#botonCopiar:active {
+    background-color: #3b0000;
+}
+
+#botonCopiar:active {
+    background-color: #3b0000;
+}
+
 footer {
     width: 100%;
     height: 100%;
@@ -228,7 +286,8 @@ footer {
         flex-direction: column;
     }
 
-    header, main {
+    header,
+    main {
         display: flex;
         width: 100%;
         height: auto;
@@ -241,9 +300,12 @@ footer {
 
     .container-logo {
         padding: 25px 0;
+        display: flex;
+        justify-content: flex-start;
     }
 
-    .container-encriptar, .container-desencriptar {
+    .container-encriptar,
+    .container-desencriptar {
         width: 100%;
         height: auto;
         padding: 48px 15px;
@@ -266,7 +328,8 @@ footer {
         padding: 1em;
     }
 
-    .container-botoncopiar, #botonCopiar {
+    .container-botoncopiar,
+    #botonCopiar {
         width: 100%;
     }
 }
@@ -280,7 +343,8 @@ footer {
         flex-direction: column;
     }
 
-    header, main {
+    header,
+    main {
         display: flex;
         width: 100%;
         height: auto;
@@ -293,9 +357,12 @@ footer {
 
     .container-logo {
         padding: 25px 0;
+        display: flex;
+        justify-content: flex-start;
     }
 
-    .container-encriptar, .container-desencriptar {
+    .container-encriptar,
+    .container-desencriptar {
         width: 100%;
         height: auto;
         padding: 48px 15px;
@@ -308,7 +375,8 @@ footer {
         gap: 15px;
     }
 
-    #botonCifrar, #botonDescifrar {
+    #botonCifrar,
+    #botonDescifrar {
         width: 100%;
         margin: 0;
     }
@@ -324,13 +392,17 @@ footer {
         display: none;
     }
 
-    .container-aviso2, .container-info2, .container-botoncopiar, #botonCopiar {
+    .container-aviso2,
+    .container-info2,
+    .container-botoncopiar,
+    #botonCopiar {
         width: 100%;
         height: auto;
         padding: 1em;
         margin: 0;
     }
-    .container-info2{
+
+    .container-info2 {
         width: 100%;
         height: 40vh;
     }

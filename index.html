@@ -3,103 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Configura el conjunto de caracteres del documento -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura el viewport para que el diseño sea adecuado en dispositivos móviles -->
     <title>Encriptador</title>
-    <!-- Título de la página -->
     <link rel="stylesheet" href="reset.css">
-    <!-- Enlace al archivo de estilo reset.css -->
     <link rel="stylesheet" href="style.css">
-    <!-- Enlace al archivo de estilo style.css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <!-- Encabezado del documento -->
-        <div class="container-logo">
-            <!-- Contenedor para el logo -->
-            <img src="img/Logo.png" class="imgLogo" alt="logoAlura">
-            <!-- Logo de Alura -->
-        </div>
-    </header>
-
     <main>
-        <!-- Contenido principal de la página -->
+        <!-- Sección principal donde el usuario puede encriptar y desencriptar texto -->
+        <section  class="container-logo">
+            <img src="img/Logo.png" class="imgLogo" alt="logoAlura">
+        </section>
+
         <section class="container-encriptar">
-            <!-- Sección para encriptar texto -->
             <div class="container-texto">
-                <!-- Contenedor del área de texto -->
-                <textarea name="input1" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aquí"
-                    required></textarea>
-                <!-- Área de texto donde el usuario ingresa el texto a encriptar -->
+                <textarea name="input1" id="texto" cols="40" rows="10" placeholder="Ingrese el texto aquí" required></textarea>
             </div>
 
             <div class="container__aviso">
-                <!-- Contenedor para la imagen de aviso -->
                 <div class="container__aviso__img">
                     <img src="/img/aviso.png" alt="imagen de aviso">
                 </div>
-                <p>Solo letras minúsculas y sin acentos</p>
-                <!-- Imagen de aviso -->
+                <p>Solo letras minúsculas y sin acentos</p> <!-- Instrucción importante para el usuario -->
             </div>
 
             <div class="container-botones">
-                <!-- Contenedor para los botones -->
-                <button id="botonCifrar" onclick="encriptar()">Encriptar</button>
-                <!-- Botón para encriptar el texto, llama a la función validarInput() -->
-                <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button>
-                <!-- Botón para desencriptar el texto, llama a la función desencriptar() -->
+                <button id="botonCifrar" onclick="encriptar()">Encriptar</button> <!-- Llama a la función para encriptar -->
+                <button id="botonDescifrar" onclick="desencriptar()">Desencriptar</button> <!-- Llama a la función para desencriptar -->
             </div>
         </section>
 
+        <!-- Sección para mostrar el resultado desencriptado y opciones adicionales -->
         <section class="container-desencriptar">
-            <!-- Sección para desencriptar texto -->
             <div class="container-info" id="container-info">
-                <!-- Contenedor para la información inicial -->
                 <div class="container-img">
-                    <!-- Contenedor para la imagen del muñeco -->
                     <img src="img/Muñeco.png" id="imgMuñeco" alt="imagen de un muñeco">
-                    <!-- Imagen del muñeco -->
                 </div>
                 <div class="container__aviso2">
-                    <!-- Contenedor para la segunda imagen de aviso -->
                     <p class="msj1">Ningún mensaje fue encontrado</p>
-                    <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
-
-                    <!-- Segunda imagen de aviso -->
+                    <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p> <!-- Mensaje de ayuda -->
                 </div>
             </div>
             <div class="container-info2" id="container-info2" style="display: none;">
-                <!-- Contenedor para la información tras desencriptar, inicialmente oculto -->
-                <textarea name="xd" id="texto2"></textarea>
-                <!-- Área de texto donde se muestra el texto desencriptado -->
+                <textarea name="xd" id="texto2"></textarea> <!-- Área de texto para mostrar el resultado desencriptado -->
                 <div class="container-botoncopiar" id="container-botoncopiar" style="display: none;">
-                    <!-- Contenedor para el botón de copiar, inicialmente oculto -->
-                    <button id="botonCopiar" onclick="copiarTexto()">Copiar</button>
-                    <!-- Botón para copiar el texto desencriptado, llama a la función copiarTexto() -->
+                    <button id="botonCopiar" onclick="copiarTexto()">Copiar</button> <!-- Botón para copiar el texto desencriptado -->
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer>
-        <!-- Pie de página del documento -->
         <div class="container-footer">
-            <!-- Contenedor del pie de página -->
-            <p>Desarrollado por Alura Latam y por Ivan Cruz <br> Estudiante ONE (G6) -
-                Oracle Next Education - 2024 🇲🇽  </p>
-            <!-- Información del creador -->
+            <p>Desarrollado por Alura Latam y por Ivan Cruz <br> Estudiante ONE (G6) - Oracle Next Education - 2024 🇲🇽</p>
         </div>
     </footer>
-
     <script src="app.js"></script>
-    <!-- Enlace al archivo JavaScript principal -->
-
 </body>
 
 </html>

@@ -1,85 +1,121 @@
 // Función para validar el texto ingresado antes de encriptar
 function validarInput(text) {
-    const regex = /^[a-z\s]*$/; // Expresión regular para permitir solo letras minúsculas y espacios
-    if (!regex.test(text) || text === "") {
-        // Si el texto no coincide con la expresión regular o está vacío
-        alert( "El texto ingresado no es válido. Por favor, use solo letras minúsculas sin acentos ni caracteres especiales."); // Mostrar mensaje de alerta
-        return false; // Devolver falso
-    } else {
-        return true; // Devolver verdadero
+    // Expresión regular que permite solo letras minúsculas y espacios
+    const regex = /^[a-z\s]*$/;
+    // Obtener el textarea con ID "texto" del DOM
+    const textArea = document.getElementById("texto");
+    
+    // Quitar la clase de error (si existe) antes de validar
+    textArea.classList.remove("error");
+
+    // Validar si el campo de texto está vacío
+    if (text === "") {
+        alert("El campo de texto no puede estar vacío."); // Mostrar alerta si está vacío
+        textArea.classList.add("error"); // Agregar clase de error para cambiar el borde a rojo
+        return false; // Retornar falso porque no pasó la validación
     }
+    
+    // Validar si el texto ingresado cumple con la expresión regular (solo letras minúsculas y espacios)
+    if (!regex.test(text)) {
+        alert("El texto ingresado no es válido. Por favor, use solo letras minúsculas sin acentos ni caracteres especiales.");
+        textArea.classList.add("error"); // Agregar clase de error si no cumple la validación
+        return false; // Retornar falso si no pasa la validación
+    }
+
+    // Si pasa todas las validaciones, retornar verdadero
+    return true;
 }
 
 // Función para encriptar el texto
 function encriptar() {
-    const input = document.getElementById("texto").value.trim(); // Obtener el valor del texto ingresado y eliminar espacios en blanco
+    // Obtener el valor ingresado en el textarea "texto" y eliminar los espacios en blanco al inicio y final
+    const input = document.getElementById("texto").value.trim();
+    
+    // Si el texto es válido, proceder con la encriptación
     if (validarInput(input)) {
-        const arr = input.split(""); // Convertir el texto en un array de caracteres
+        // Convertir el texto en un array de caracteres
+        const arr = input.split("");
+        
+        // Recorrer cada carácter del texto
         for (let i = 0; i < arr.length; i++) {
-            // Recorrer cada caracter del texto
+            // Si el carácter es una vocal, reemplazarlo según el caso
             if ("aeiou".includes(arr[i])) {
-                // Si el caracter es una vocal
                 switch (arr[i]) {
                     case "a":
-                        arr[i] = "ai";
+                        arr[i] = "ai"; // Reemplazar "a" por "ai"
                         break;
                     case "e":
-                        arr[i] = "enter";
+                        arr[i] = "enter"; // Reemplazar "e" por "enter"
                         break;
                     case "i":
-                        arr[i] = "imes";
+                        arr[i] = "imes"; // Reemplazar "i" por "imes"
                         break;
                     case "o":
-                        arr[i] = "ober";
+                        arr[i] = "ober"; // Reemplazar "o" por "ober"
                         break;
                     case "u":
-                        arr[i] = "ufat";
+                        arr[i] = "ufat"; // Reemplazar "u" por "ufat"
                         break;
                 }
             }
         }
 
-        const textoCifrado = arr.join(""); // Unir los caracteres encriptados para formar el texto cifrado
+        // Unir los caracteres modificados en un string
+        const textoCifrado = arr.join("");
+        
+        // Ocultar el contenedor del primer textarea
         document.getElementById("container-info").style.display = "none";
-        document.getElementById("container-info2").style.display = "flex"; // Mostrar el contenedor del segundo textarea
-        document.getElementById("texto2").value = textoCifrado; // Establecer el texto cifrado en el segundo textarea
+        // Mostrar el contenedor del segundo textarea (donde aparecerá el texto cifrado)
+        document.getElementById("container-info2").style.display = "flex";
+        // Establecer el valor cifrado en el segundo textarea
+        document.getElementById("texto2").value = textoCifrado;
+        // Mostrar el botón para copiar el texto cifrado
         document.getElementById("container-botoncopiar").style.display = "flex";
     } else {
-        alert("error al encriptar texto");
+        // Mostrar un mensaje de error si la validación falla
+        alert("Error al encriptar texto");
     }
 }
 
 // Función para desencriptar el texto
 function desencriptar() {
-    const textoCifrado = document.getElementById("texto").value.trim(); // Obtener el texto cifrado
-    if (validarInput(textoCifrado)){
-        const textoDescifrado = textoCifrado // Desencriptar el texto reemplazando cada encriptación por su vocal original
-        .replace(/ai/g, "a")
-        .replace(/enter/g, "e")
-        .replace(/imes/g, "i")
-        .replace(/ober/g, "o")
-        .replace(/ufat/g, "u");
+    // Obtener el texto ingresado en el textarea "texto" y eliminar los espacios en blanco al inicio y final
+    const textoCifrado = document.getElementById("texto").value.trim();
+    
+    // Validar el texto antes de proceder con la desencriptación
+    if (validarInput(textoCifrado)) {
+        // Reemplazar cada conjunto encriptado con su vocal original
+        const textoDescifrado = textoCifrado
+            .replace(/ai/g, "a") // Reemplazar "ai" por "a"
+            .replace(/enter/g, "e") // Reemplazar "enter" por "e"
+            .replace(/imes/g, "i") // Reemplazar "imes" por "i"
+            .replace(/ober/g, "o") // Reemplazar "ober" por "o"
+            .replace(/ufat/g, "u"); // Reemplazar "ufat" por "u"
 
-    document.getElementById("container-info").style.display = "none";
-    document.getElementById("container-info2").style.display = "flex"; // Mostrar el contenedor del segundo textarea
-    document.getElementById("texto2").value = textoDescifrado; // Establecer el texto descifrado en el segundo textarea
-    } else{
-        alert('error al desencriptar texto')
+        // Ocultar el contenedor del primer textarea
+        document.getElementById("container-info").style.display = "none";
+        // Mostrar el contenedor del segundo textarea (donde aparecerá el texto descifrado)
+        document.getElementById("container-info2").style.display = "flex";
+        // Establecer el valor descifrado en el segundo textarea
+        document.getElementById("texto2").value = textoDescifrado;
+    } else {
+        // Mostrar un mensaje de error si la validación falla
+        alert("Error al desencriptar texto");
     }
-
-
-    
-    
 }
 
 // Función para copiar el texto cifrado al portapapeles utilizando async/await
 async function copiarTexto() {
-    const textoCifrado = document.getElementById("texto2").value; // Obtener el texto cifrado
+    // Obtener el texto cifrado del segundo textarea
+    const textoCifrado = document.getElementById("texto2").value;
+    
     try {
-        await navigator.clipboard.writeText(textoCifrado); // Intentar copiar el texto al portapapeles
-        alert("Texto copiado al portapapeles correctamente"); // Mostrar mensaje de éxito
+        // Intentar copiar el texto al portapapeles
+        await navigator.clipboard.writeText(textoCifrado);
+        // Mostrar un mensaje de éxito
+        alert("Texto copiado al portapapeles correctamente");
     } catch (error) {
-        console.error("Error al copiar texto: ", error); // Mostrar mensaje de error en la consola
-        alert("No se pudo copiar el texto al portapapeles. Inténtalo nuevamente."); // Mostrar mensaje de error al usuario
+        // Mostrar un mensaje de error en caso de que falle
+        console.error("Error al copiar texto: ", error);
     }
 }
