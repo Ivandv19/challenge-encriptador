@@ -43,3 +43,13 @@ El sitio web está desplegado en Vercel y se puede acceder a través del siguien
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
+
+## Imagen
+
+![encriptador]( https://github.com/user-attachments/assets/bd769b97-3d86-4eab-b212-c53dbe67e167 )
+
+
+## Proyecto En Portafolio Web ##1
+
+
+-Este proyecto es parte de los proyectos mostrados en mi portafolio web
