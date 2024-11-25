@@ -1,5 +1,7 @@
 # Encriptador de Texto
 
+## Descripción
+
 Este proyecto es una aplicación web simple que permite encriptar y desencriptar texto. Está desarrollado con HTML, CSS y JavaScript.
 
 ## Características
