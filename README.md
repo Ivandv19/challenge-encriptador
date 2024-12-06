@@ -1,6 +1,7 @@
 # Encriptador de Texto
 
 [![wakatime](https://wakatime.com/badge/github/Ivandv19/challenge-encriptador.svg)](https://wakatime.com/badge/github/Ivandv19/challenge-encriptador)
+[![wakatime](https://wakatime.com/badge/user/c585b1da-c687-4d3b-89c1-72901e86fb52/project/55a64c54-72c0-42a1-a898-2897589bd823.svg)](https://wakatime.com/badge/user/c585b1da-c687-4d3b-89c1-72901e86fb52/project/55a64c54-72c0-42a1-a898-2897589bd823)
 
 ## Descripción
 
