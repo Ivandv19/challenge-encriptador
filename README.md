@@ -31,7 +31,7 @@ Este proyecto es una aplicación web simple que permite encriptar y desencriptar
 
 1. **Clonar el Repositorio:** Clona este repositorio en tu máquina local utilizando Git.
 ```bash
-https://github.com/IvandevI9/challenge-encriptador.git
+https://github.com/Ivandv19/challenge-encriptador.git
 ```
 2. Abre el archivo `index.html` en tu navegador web.
 
