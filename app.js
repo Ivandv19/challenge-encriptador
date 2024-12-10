@@ -71,6 +71,7 @@ function encriptar() {
         document.getElementById("texto2").value = textoCifrado;
         // Mostrar el botón para copiar el texto cifrado
         document.getElementById("container-botoncopiar").style.display = "flex";
+        document.getElementById("container-boton-limpiar").style.display = "flex"
     } else {
         // Mostrar un mensaje de error si la validación falla
         alert("Error al encriptar texto");
@@ -102,6 +103,27 @@ function desencriptar() {
         // Mostrar un mensaje de error si la validación falla
         alert("Error al desencriptar texto");
     }
+}
+
+function limpiarTexto(){
+    // Obtiene el valor del campo de texto con el id "texto"
+    const input = document.getElementById("texto").value;
+
+    // Obtiene el valor del campo de texto con el id "texto2"
+    const textoCifrado = document.getElementById("texto2").value;
+
+    // Define una variable vacía que se usará para limpiar los campos
+    const limpiarCampos = "";
+
+    // Asigna un valor vacío a ambos campos de texto
+    document.getElementById("texto").value = limpiarCampos;  // Limpia el campo con el id "texto"
+    document.getElementById("texto2").value = limpiarCampos; // Limpia el campo con el id "texto2"
+
+    // Cambia el estilo de visibilidad del contenedor 
+    document.getElementById("container-info2").style.display = "none";  // Oculta el contenedor "container-info2"
+
+    // Cambia el estilo de visibilidad del contenedor 
+    document.getElementById("container-info").style.display = "flex";  // Muestra el contenedor "container-info" en formato flex
 }
 
 // Función para copiar el texto cifrado al portapapeles utilizando async/await

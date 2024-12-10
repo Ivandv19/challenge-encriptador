@@ -103,6 +103,13 @@ main {
     justify-content: center;
 }
 
+.container-botones-info2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 #botonCifrar,
 #botonDescifrar {
     width: 50%;
@@ -234,6 +241,22 @@ main {
     justify-content: center;
 }
 
+.container-boton-limpiar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#boton-limpiar {
+    width: 80%;
+    border-radius: 25px;
+    padding: 16px 24px;
+    color: #0A3871;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #0A3871;
+}
+
 #botonCopiar {
     width: 80%;
     border-radius: 25px;
@@ -259,6 +282,23 @@ main {
 }
 
 #botonCopiar:active {
+    background-color: #3b0000;
+}
+
+#boton-limpiar:hover {
+    background-color: #042b4b;
+}
+
+#boton-limpiar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+#boton-limpiar:active {
+    background-color: #3b0000;
+}
+
+#boton-limpiar:active {
     background-color: #3b0000;
 }
 
@@ -332,6 +372,11 @@ footer {
     #botonCopiar {
         width: 100%;
     }
+
+    .container-boton-limpiar,
+    #boton-limpiar {
+        width: 100%;
+    }
 }
 
 
@@ -397,9 +442,6 @@ footer {
     .container-botoncopiar,
     #botonCopiar {
         width: 100%;
-        height: auto;
-        padding: 1em;
-        margin: 0;
     }
 
     .container-info2 {
@@ -409,5 +451,13 @@ footer {
 
     .container-aviso2 img {
         width: 100%;
+    }
+
+    .container-boton-limpiar,
+    #boton-limpiar {
+        width: 100%;
+    }
+    .container-botones-info2{
+        padding: 10px 15px;
     }
 }
